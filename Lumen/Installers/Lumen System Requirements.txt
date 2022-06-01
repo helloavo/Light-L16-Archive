@@ -1,0 +1,25 @@
+Please note: Support for Lumen has ended.
+The application is available for download but is provided as-is.
+There will be no further updates.
+
+
+Lumen System Requirements
+
+All systems
+8 GB or more of RAM (16 GB recommended)
+200MB of available hard-disk space (1GB recommended)
+64-bit processor
+
+‍Intel chipset requirements
+Nehalem, Westmere, Sandy Bridge, Ivy Bridge, Haswell, Broadwell, Skylake, Kaby Lake
+
+‍AMD chipset requirements
+Jaguar, Puma, Bulldozer, Piledriver, Steamroller, Excavator, Zen
+
+Mac
+OSX 10.15 (Catalina)
+Intel Mac: 2012 or newer
+
+Windows
+Windows 10
+Windows: 2012 or newer
