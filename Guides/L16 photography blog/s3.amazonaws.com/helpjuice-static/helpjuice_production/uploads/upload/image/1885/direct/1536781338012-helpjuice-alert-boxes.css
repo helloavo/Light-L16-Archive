@@ -1,0 +1,64 @@
+/* Helpjuice Alert Blocks (new feature, available for you to customize to your liking.) */
+
+.hj-alert-block {
+  border-left: 5px solid black;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 0 2px 2px 0;
+  color: #8A6D3C;
+}
+.hj-alert-block p.hj-alert-text {
+  margin: 10px 0;
+  color: #8A6D3C;
+}
+.hj-alert-block div {
+  margin: 0;
+}
+
+div.hj-alert-block.hj-info-block {
+  border-color: #2196F3;
+  background: #daf1f8;
+  color: #3E729F;
+}
+div.hj-alert-block.hj-info-block p.hj-alert-text, div.hj-alert-block.hj-info-block h3.hj-alert-heading {
+  color: #3E729F;
+}
+div.hj-alert-block.hj-info-block h3.hj-alert-heading {
+  margin: 0 0 10px 0;
+}
+
+div.hj-alert-block.hj-warning-block {
+  border-color: #FF9800;
+  background: #f8d9ac;
+  color: #8A6D3C;
+}
+div.hj-alert-block.hj-warning-block p.hj-alert-text, div.hj-alert-block.hj-warning-block h3.hj-alert-heading {
+  color: #8A6D3C;
+}
+div.hj-alert-block.hj-warning-block h3.hj-alert-heading {
+  margin: 0 0 10px 0;
+}
+
+div.hj-alert-block.hj-success-block {
+  border-color: #4CAF50;
+  background: #c7e6c7;
+  color: #4A7D61;
+}
+div.hj-alert-block.hj-success-block p.hj-alert-text, div.hj-alert-block.hj-success-block h3.hj-alert-heading {
+  color: #4A7D61;
+}
+div.hj-alert-block.hj-success-block h3.hj-alert-heading {
+  margin: 0 0 10px 0;
+}
+
+div.hj-alert-block.hj-error-block {
+  border-color: #F44336;
+  background: #f4cecd;
+  color: #A4474F;
+}
+div.hj-alert-block.hj-error-block p.hj-alert-text, div.hj-alert-block.hj-error-block h3.hj-alert-heading {
+  color: #A4474F;
+}
+div.hj-alert-block.hj-error-block h3.hj-alert-heading {
+  margin: 0 0 10px 0;
+}

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>light-prod-assets</BucketName><RequestId>K62C23Y83D9VDVC9</RequestId><HostId>euYc6bxzupkfHI16O/0K2NoiRJKw19fqr8cVbqEfpo79UgOcdRw6VinMvZFJuvxkQoPr3Ap8f9s=</HostId></Error>

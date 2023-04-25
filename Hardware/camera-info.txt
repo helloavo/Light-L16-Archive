@@ -1,0 +1,768 @@
+Camera module HAL API version: 0x100
+Camera module API version: 0x204
+Camera module name: QCamera Module
+Camera module author: Qualcomm Innovation Center Inc
+Number of camera devices: 1
+Active Camera Clients:
+[]
+Allowed users:
+0
+Vendor tag definitions:
+    Dumping configured vendor tag descriptors: 38 entries
+      0x80000000 (light_raw.offset) with type 1 (int32) defined in section co.light
+      0x80000001 (light_raw.csid) with type 1 (int32) defined in section co.light
+      0x80000002 (light_raw.calib_offset) with type 1 (int32) defined in section co.light
+      0x80000003 (light_raw.frame_size_ab) with type 1 (int32) defined in section co.light
+      0x80000004 (light_raw.frame_size_bc) with type 1 (int32) defined in section co.light
+      0x80000005 (light_raw.frame_size_c) with type 1 (int32) defined in section co.light
+      0x80000006 (light_raw.focal_length) with type 2 (float) defined in section co.light
+      0x80000007 (light_raw.calib_size) with type 1 (int32) defined in section co.light
+      0x80000008 (iso_range_min) with type 1 (int32) defined in section co.light
+      0x80000009 (iso_range_max) with type 1 (int32) defined in section co.light
+      0x8000000a (shutter_range_min) with type 3 (int64) defined in section co.light
+      0x8000000b (shutter_range_max) with type 3 (int64) defined in section co.light
+      0x8000000c (zoom_factor) with type 2 (float) defined in section co.light
+      0x8000000d (focus_type) with type 1 (int32) defined in section co.light
+      0x8000000e (stacked_capture_state) with type 0 (byte) defined in section co.light
+      0x8000000f (stacked_capture_fw) with type 0 (byte) defined in section co.light
+      0x80000010 (tripod_fw) with type 0 (byte) defined in section co.light
+      0x80000011 (burst_fps) with type 1 (int32) defined in section co.light
+      0x80010000 (privatedata_reprocess) with type 1 (int32) defined in section org.codeaurora.qcamera3.privatedata
+      0x80020000 (cds_mode) with type 1 (int32) defined in section org.codeaurora.qcamera3.CDS
+      0x80020001 (cds_info) with type 0 (byte) defined in section org.codeaurora.qcamera3.CDS
+      0x80030000 (opaque_raw_strides) with type 1 (int32) defined in section org.codeaurora.qcamera3.opaque_raw
+      0x80030001 (opaque_raw_format) with type 0 (byte) defined in section org.codeaurora.qcamera3.opaque_raw
+      0x80040000 (count) with type 1 (int32) defined in section org.codeaurora.qcamera3.crop
+      0x80040001 (data) with type 1 (int32) defined in section org.codeaurora.qcamera3.crop
+      0x80040002 (roimap) with type 1 (int32) defined in section org.codeaurora.qcamera3.crop
+      0x80050000 (tuning_meta_data_blob) with type 1 (int32) defined in section org.codeaurora.qcamera3.tuning_meta_data
+      0x80060000 (enable) with type 0 (byte) defined in section org.codeaurora.qcamera3.temporal_denoise
+      0x80060001 (process_type) with type 1 (int32) defined in section org.codeaurora.qcamera3.temporal_denoise
+      0x80070000 (use_av_timer) with type 0 (byte) defined in section org.codeaurora.qcamera3.av_timer
+      0x80080000 (dynamic_black_level_pattern) with type 2 (float) defined in section org.codeaurora.qcamera3.sensor_meta_data
+      0x80080001 (is_mono_only) with type 0 (byte) defined in section org.codeaurora.qcamera3.sensor_meta_data
+      0x80090000 (sensor.dynamicBlackLevel) with type 2 (float) defined in section com.google.nexus.experimental2015
+      0x80090001 (sensor.info.opticallyShieldedRegions) with type 1 (int32) defined in section com.google.nexus.experimental2015
+      0x800a0000 (enable) with type 0 (byte) defined in section org.codeaurora.qcamera3.dualcam_link_meta_data
+      0x800a0001 (is_main) with type 0 (byte) defined in section org.codeaurora.qcamera3.dualcam_link_meta_data
+      0x800a0002 (related_camera_id) with type 1 (int32) defined in section org.codeaurora.qcamera3.dualcam_link_meta_data
+      0x800b0000 (dualcam_calib_meta_data_blob) with type 0 (byte) defined in section org.codeaurora.qcamera3.dualcam_calib_meta_data
+
+Prior client events (most recent at top):
+  04-22 17:30:11 : DISCONNECT device 0 client for package light.co.lightcamera (PID 2119)
+  04-22 17:28:11 : CONNECT device 0 client for package light.co.lightcamera (PID 2119)
+  04-22 17:28:06 : DISCONNECT device 0 client for package light.co.lightcamera (PID 2119)
+  04-22 17:28:01 : CONNECT device 0 client for package light.co.lightcamera (PID 2119)
+  04-22 17:27:56 : DISCONNECT device 0 client for package light.co.lightcamera (PID 2119)
+  04-22 17:27:56 : CONNECT device 0 client for package light.co.lightcamera (PID 2119)
+  04-21 21:07:48 : DISCONNECT device 0 client for package light.co.lightcamera (PID 2119)
+  04-21 21:07:44 : CONNECT device 0 client for package light.co.lightcamera (PID 2119)
+  04-21 21:07:35 : DISCONNECT device 0 client for package light.co.lightcamera (PID 2119)
+  04-21 21:07:31 : CONNECT device 0 client for package light.co.lightcamera (PID 2119)
+  04-21 21:07:22 : DISCONNECT device 0 client for package light.co.lightcamera (PID 2119)
+  04-21 21:05:44 : CONNECT device 0 client for package light.co.lightcamera (PID 2119)
+  04-21 21:05:43 : DISCONNECT device 0 client for package light.co.lightcamera (PID 2119)
+  04-21 21:05:43 : CONNECT device 0 client for package light.co.lightcamera (PID 2119)
+  04-21 20:44:17 : REJECT device 1 client for package com.inkwired.droidinfo (PID 4482), reason: (No such device (-19))
+  04-21 20:44:17 : DISCONNECT device 0 client for package com.inkwired.droidinfo (PID 4482)
+  04-21 20:44:17 : CONNECT device 0 client for package com.inkwired.droidinfo (PID 4482)
+  04-21 20:44:10 : DISCONNECT device 0 client for package light.co.lightcamera (PID 2119)
+  04-21 20:44:03 : CONNECT device 0 client for package light.co.lightcamera (PID 2119)
+  04-21 20:39:08 : DISCONNECT device 0 client for package light.co.lightcamera (PID 2119)
+  04-21 20:38:53 : CONNECT device 0 client for package light.co.lightcamera (PID 2119)
+  01-04 00:19:20 : DISCONNECT device 0 client for package light.co.lightcamera (PID 2119)
+  01-04 00:19:20 : CONNECT device 0 client for package light.co.lightcamera (PID 2119)
+  01-04 00:19:17 : USER_SWITCH previous allowed users:  , current allowed users: 0
+
+Camera 0 information:
+  Facing: BACK
+  Orientation: 90
+  Resource Cost: 100
+  Conflicting Devices: NONE
+  Device version: 0x303
+  Device static metadata:
+    Dumping camera metadata array: 99 / 198 entries, 7312 / 14624 bytes of extra data.
+      Version: 1, Flags: 00000000
+      android.info.supportedHardwareLevel (150000): byte[1]
+        [FULL ]
+      co.light.light_raw.frame_size_ab (80000003): int32[3]
+        [84934688 84934688 0 ]
+      co.light.light_raw.frame_size_bc (80000004): int32[3]
+        [68157472 51380256 68157472 ]
+      co.light.light_raw.frame_size_c (80000005): int32[3]
+        [17825824 17825824 68157472 ]
+      co.light.light_raw.focal_length (80000006): float[3]
+        [2.79999995 7.00000000 15.00000000 ]
+      co.light.light_raw.calib_size (80000007): int32[1]
+        [334072 ]
+      android.lens.info.minimumFocusDistance (90005): float[1]
+        [0.00000000 ]
+      android.lens.info.hyperfocalDistance (90004): float[1]
+        [0.78571433 ]
+      android.lens.info.availableFocalLengths (90002): float[3]
+        [2.79999995 7.00000000 15.00000000 ]
+      android.lens.info.availableApertures (90000): float[3]
+        [2.20000005 2.20000005 2.20000005 ]
+      android.lens.info.availableFilterDensities (90001): float[1]
+        [0.00000000 ]
+      android.lens.info.availableOpticalStabilization (90003): byte[1]
+        [0 ]
+      android.lens.info.shadingMapSize (90006): int32[2]
+        [17 13 ]
+      android.sensor.info.physicalSize (f0005): float[2]
+        [5.82399988 4.36800003 ]
+      android.sensor.info.exposureTimeRange (f0003): int64[2]
+        [10449 29981853000 ]
+      android.sensor.info.maxFrameDuration (f0004): int64[1]
+        [29981853000 ]
+      android.sensor.baseGainFactor (e000b): rational[1]
+        [(0 / 128) ]
+      android.sensor.info.colorFilterArrangement (f0002): byte[1]
+        [GRBG ]
+      android.sensor.info.pixelArraySize (f0006): int32[2]
+        [4160 3120 ]
+      android.sensor.info.activeArraySize (f0000): int32[4]
+        [0 0 4160 3120 ]
+      android.sensor.info.whiteLevel (f0007): int32[1]
+        [1023 ]
+      android.sensor.blackLevelPattern (e000c): int32[4]
+        [64 64 64 64 ]
+      android.flash.info.chargeDuration (50001): int64[1]
+        [0 ]
+      android.tonemap.maxCurvePoints (130004): int32[1]
+        [512 ]
+      android.sensor.info.timestampSource (f0008): byte[1]
+        [UNKNOWN ]
+      android.statistics.info.histogramBucketCount (120001): int32[1]
+        [256 ]
+      android.statistics.info.maxHistogramCount (120003): int32[1]
+        [256 ]
+      android.statistics.info.sharpnessMapSize (120005): int32[2]
+        [0 0 ]
+      android.statistics.info.maxSharpnessMapValue (120004): int32[1]
+        [0 ]
+      android.scaler.availableFormats (d0001): int32[7]
+        [RAW_OPAQUE RAW16 YCbCr_420_888 BLOB ]
+        [37 48 IMPLEMENTATION_DEFINED ]
+      android.scaler.availableProcessedSizes (d0006): int32[52]
+        [3840 2160 2592 1944 ]
+        [2688 1512 2048 1536 ]
+        [1920 1080 1600 1200 ]
+        [1440 1080 1280 960 ]
+        [1280 768 1280 720 ]
+        [1024 768 800 600 ]
+        [864 480 800 480 ]
+        [720 480 640 480 ]
+        [640 360 480 640 ]
+        [480 360 480 320 ]
+        [352 288 320 240 ]
+        [240 320 176 144 ]
+        [160 120 144 176 ]
+      android.scaler.availableRawSizes (d0008): int32[2]
+        [3840 2160 ]
+      android.control.aeAvailableTargetFpsRanges (10014): int32[10]
+        [15 15 20 20 ]
+        [24 24 7 30 ]
+        [30 30 ]
+      android.control.aeCompensationStep (10016): rational[1]
+        [(1 / 6) ]
+      android.control.availableVideoStabilizationModes (1001a): byte[1]
+        [0 ]
+      android.scaler.availableMaxDigitalZoom (d0004): float[1]
+        [4.00000000 ]
+      android.scaler.croppingType (d000d): byte[1]
+        [CENTER_ONLY ]
+      android.control.maxRegions (1001c): int32[3]
+        [1 0 0 ]
+      android.statistics.info.availableFaceDetectModes (120000): byte[3]
+        [0 1 2 ]
+      android.statistics.info.maxFaceCount (120002): int32[1]
+        [10 ]
+      android.control.aeCompensationRange (10015): int32[2]
+        [-12 12 ]
+      android.lens.facing (80005): byte[1]
+        [BACK ]
+      android.jpeg.availableThumbnailSizes (70007): int32[16]
+        [0 0 176 144 ]
+        [240 144 256 144 ]
+        [240 160 256 154 ]
+        [240 240 320 240 ]
+      android.scaler.availableStreamConfigurations (d000a): int32[336]
+        [36 3840 2160 OUTPUT ]
+        [32 3840 2160 OUTPUT ]
+        [35 3840 2160 OUTPUT ]
+        [35 2592 1944 OUTPUT ]
+        [35 2688 1512 OUTPUT ]
+        [35 2048 1536 OUTPUT ]
+        [35 1920 1080 OUTPUT ]
+        [35 1600 1200 OUTPUT ]
+        [35 1440 1080 OUTPUT ]
+        [35 1280 960 OUTPUT ]
+        [35 1280 768 OUTPUT ]
+        [35 1280 720 OUTPUT ]
+        [35 1024 768 OUTPUT ]
+        [35 800 600 OUTPUT ]
+        [35 864 480 OUTPUT ]
+        [35 800 480 OUTPUT ]
+        [35 720 480 OUTPUT ]
+        [35 640 480 OUTPUT ]
+        [35 640 360 OUTPUT ]
+        [35 480 640 OUTPUT ]
+        [35 480 360 OUTPUT ]
+        [35 480 320 OUTPUT ]
+        [35 352 288 OUTPUT ]
+        [35 320 240 OUTPUT ]
+        [35 240 320 OUTPUT ]
+        [35 176 144 OUTPUT ]
+        [35 160 120 OUTPUT ]
+        [35 144 176 OUTPUT ]
+        [35 3840 2160 INPUT ]
+        [33 3840 2160 OUTPUT ]
+        [33 2592 1944 OUTPUT ]
+        [33 2688 1512 OUTPUT ]
+        [33 2048 1536 OUTPUT ]
+        [33 1920 1080 OUTPUT ]
+        [33 1600 1200 OUTPUT ]
+        [33 1440 1080 OUTPUT ]
+        [33 1280 960 OUTPUT ]
+        [33 1280 768 OUTPUT ]
+        [33 1280 720 OUTPUT ]
+        [33 1024 768 OUTPUT ]
+        [33 800 600 OUTPUT ]
+        [33 864 480 OUTPUT ]
+        [33 800 480 OUTPUT ]
+        [33 720 480 OUTPUT ]
+        [33 640 480 OUTPUT ]
+        [33 640 360 OUTPUT ]
+        [33 480 640 OUTPUT ]
+        [33 480 360 OUTPUT ]
+        [33 480 320 OUTPUT ]
+        [33 352 288 OUTPUT ]
+        [33 320 240 OUTPUT ]
+        [33 240 320 OUTPUT ]
+        [33 176 144 OUTPUT ]
+        [33 160 120 OUTPUT ]
+        [33 144 176 OUTPUT ]
+        [37 3840 2160 OUTPUT ]
+        [48 3840 2160 OUTPUT ]
+        [34 3840 2160 OUTPUT ]
+        [34 2592 1944 OUTPUT ]
+        [34 2688 1512 OUTPUT ]
+        [34 2048 1536 OUTPUT ]
+        [34 1920 1080 OUTPUT ]
+        [34 1600 1200 OUTPUT ]
+        [34 1440 1080 OUTPUT ]
+        [34 1280 960 OUTPUT ]
+        [34 1280 768 OUTPUT ]
+        [34 1280 720 OUTPUT ]
+        [34 1024 768 OUTPUT ]
+        [34 800 600 OUTPUT ]
+        [34 864 480 OUTPUT ]
+        [34 800 480 OUTPUT ]
+        [34 720 480 OUTPUT ]
+        [34 640 480 OUTPUT ]
+        [34 640 360 OUTPUT ]
+        [34 480 640 OUTPUT ]
+        [34 480 360 OUTPUT ]
+        [34 480 320 OUTPUT ]
+        [34 352 288 OUTPUT ]
+        [34 320 240 OUTPUT ]
+        [34 240 320 OUTPUT ]
+        [34 176 144 OUTPUT ]
+        [34 160 120 OUTPUT ]
+        [34 144 176 OUTPUT ]
+        [34 3840 2160 INPUT ]
+      android.hotPixel.mode (60000): byte[1]
+        [FAST ]
+      android.statistics.hotPixelMapMode (110003): byte[1]
+        [OFF ]
+      android.scaler.availableMinFrameDurations (d000b): int64[328]
+        [36 3840 ]
+        [2160 33333333 ]
+        [32 3840 ]
+        [2160 33333333 ]
+        [35 3840 ]
+        [2160 33333333 ]
+        [35 2592 ]
+        [1944 33333333 ]
+        [35 2688 ]
+        [1512 33333333 ]
+        [35 2048 ]
+        [1536 33333333 ]
+        [35 1920 ]
+        [1080 33333333 ]
+        [35 1600 ]
+        [1200 33333333 ]
+        [35 1440 ]
+        [1080 33333333 ]
+        [35 1280 ]
+        [960 33333333 ]
+        [35 1280 ]
+        [768 33333333 ]
+        [35 1280 ]
+        [720 33333333 ]
+        [35 1024 ]
+        [768 33333333 ]
+        [35 800 ]
+        [600 33333333 ]
+        [35 864 ]
+        [480 33333333 ]
+        [35 800 ]
+        [480 33333333 ]
+        [35 720 ]
+        [480 33333333 ]
+        [35 640 ]
+        [480 33333333 ]
+        [35 640 ]
+        [360 33333333 ]
+        [35 480 ]
+        [640 33333333 ]
+        [35 480 ]
+        [360 33333333 ]
+        [35 480 ]
+        [320 33333333 ]
+        [35 352 ]
+        [288 33333333 ]
+        [35 320 ]
+        [240 33333333 ]
+        [35 240 ]
+        [320 33333333 ]
+        [35 176 ]
+        [144 33333333 ]
+        [35 160 ]
+        [120 33333333 ]
+        [35 144 ]
+        [176 33333333 ]
+        [33 3840 ]
+        [2160 33333333 ]
+        [33 2592 ]
+        [1944 33333333 ]
+        [33 2688 ]
+        [1512 33333333 ]
+        [33 2048 ]
+        [1536 33333333 ]
+        [33 1920 ]
+        [1080 33333333 ]
+        [33 1600 ]
+        [1200 33333333 ]
+        [33 1440 ]
+        [1080 33333333 ]
+        [33 1280 ]
+        [960 33333333 ]
+        [33 1280 ]
+        [768 33333333 ]
+        [33 1280 ]
+        [720 33333333 ]
+        [33 1024 ]
+        [768 33333333 ]
+        [33 800 ]
+        [600 33333333 ]
+        [33 864 ]
+        [480 33333333 ]
+        [33 800 ]
+        [480 33333333 ]
+        [33 720 ]
+        [480 33333333 ]
+        [33 640 ]
+        [480 33333333 ]
+        [33 640 ]
+        [360 33333333 ]
+        [33 480 ]
+        [640 33333333 ]
+        [33 480 ]
+        [360 33333333 ]
+        [33 480 ]
+        [320 33333333 ]
+        [33 352 ]
+        [288 33333333 ]
+        [33 320 ]
+        [240 33333333 ]
+        [33 240 ]
+        [320 33333333 ]
+        [33 176 ]
+        [144 33333333 ]
+        [33 160 ]
+        [120 33333333 ]
+        [33 144 ]
+        [176 33333333 ]
+        [37 3840 ]
+        [2160 33333333 ]
+        [48 3840 ]
+        [2160 33333333 ]
+        [34 3840 ]
+        [2160 33333333 ]
+        [34 2592 ]
+        [1944 33333333 ]
+        [34 2688 ]
+        [1512 33333333 ]
+        [34 2048 ]
+        [1536 33333333 ]
+        [34 1920 ]
+        [1080 33333333 ]
+        [34 1600 ]
+        [1200 33333333 ]
+        [34 1440 ]
+        [1080 33333333 ]
+        [34 1280 ]
+        [960 33333333 ]
+        [34 1280 ]
+        [768 33333333 ]
+        [34 1280 ]
+        [720 33333333 ]
+        [34 1024 ]
+        [768 33333333 ]
+        [34 800 ]
+        [600 33333333 ]
+        [34 864 ]
+        [480 33333333 ]
+        [34 800 ]
+        [480 33333333 ]
+        [34 720 ]
+        [480 33333333 ]
+        [34 640 ]
+        [480 33333333 ]
+        [34 640 ]
+        [360 33333333 ]
+        [34 480 ]
+        [640 33333333 ]
+        [34 480 ]
+        [360 33333333 ]
+        [34 480 ]
+        [320 33333333 ]
+        [34 352 ]
+        [288 33333333 ]
+        [34 320 ]
+        [240 33333333 ]
+        [34 240 ]
+        [320 33333333 ]
+        [34 176 ]
+        [144 33333333 ]
+        [34 160 ]
+        [120 33333333 ]
+        [34 144 ]
+        [176 33333333 ]
+      android.jpeg.maxSize (70008): int32[1]
+        [12441608 ]
+      android.control.availableEffects (10018): byte[9]
+        [0 1 2 3 4 5 6 7 8 ]
+      android.control.availableSceneModes (10019): byte[15]
+        [4 9 8 10 5 3 13 11 15 12 14 6 7 2 1 ]
+      android.control.sceneModeOverrides (1001d): byte[45]
+        [2 1 0 2 1 0 2 1 0 2 2 0 2 1 0 2 ]
+        [1 0 2 1 0 2 1 0 2 2 0 2 6 0 2 1 ]
+        [0 2 1 0 2 1 0 2 1 0 2 1 0 ]
+      android.control.availableModes (10026): byte[3]
+        [0 1 2 ]
+      android.control.aeAvailableAntibandingModes (10012): byte[4]
+        [0 2 1 3 ]
+      android.colorCorrection.availableAberrationModes (00004): byte[3]
+        [0 1 2 ]
+      android.control.afAvailableModes (10017): byte[1]
+        [0 ]
+      android.control.awbAvailableModes (1001b): byte[9]
+        [1 2 3 4 5 6 7 8 0 ]
+      android.flash.firingPower (40000): byte[11]
+        [0 1 2 3 4 5 6 7 8 9 10 ]
+      android.flash.info.available (50000): byte[1]
+        [TRUE ]
+      android.control.aeAvailableModes (10013): byte[4]
+        [0 1 2 3 ]
+      android.sensor.info.sensitivityRange (f0001): int32[2]
+        [100 12800 ]
+      android.sensor.maxAnalogSensitivity (e000d): int32[1]
+        [775 ]
+      android.sensor.orientation (e000e): int32[1]
+        [90 ]
+      android.request.maxNumOutputStreams (c0006): int32[3]
+        [1 3 1 ]
+      android.led.availableLeds (140001): byte[0]
+      android.lens.info.focusDistanceCalibration (90007): byte[1]
+        [UNCALIBRATED ]
+      android.sensor.availableTestPatternModes (e0019): int32[5]
+        [0 1 2 3 ]
+        [4 ]
+      android.request.pipelineMaxDepth (c000a): byte[1]
+        [8 ]
+      android.request.partialResultCount (c000b): int32[1]
+        [2 ]
+      android.reprocess.maxCaptureStall (180001): int32[1]
+        [2 ]
+      android.request.availableCapabilities (c000c): byte[8]
+        [BACKWARD_COMPATIBLE MANUAL_SENSOR MANUAL_POST_PROCESSING READ_SENSOR_SETTINGS BURST_CAPTURE PRIVATE_REPROCESSING YUV_REPROCESSING RAW ]
+      android.control.aeLockAvailable (10024): byte[1]
+        [TRUE ]
+      android.control.awbLockAvailable (10025): byte[1]
+        [TRUE ]
+      android.request.maxNumInputStreams (c0008): int32[1]
+        [1 ]
+      android.scaler.availableInputOutputFormatsMap (d0009): int32[8]
+        [34 2 33 35 ]
+        [35 2 33 35 ]
+      android.sync.maxLatency (170001): int32[1]
+        [PER_FRAME_CONTROL ]
+      android.hotPixel.availableHotPixelModes (60001): byte[2]
+        [1 2 ]
+      android.shading.availableModes (100002): byte[3]
+        [0 1 2 ]
+      android.statistics.info.availableLensShadingMapModes (120007): byte[2]
+        [0 1 ]
+      android.edge.availableEdgeModes (30002): byte[4]
+        [0 1 2 3 ]
+      android.noiseReduction.availableNoiseReductionModes (a0002): byte[5]
+        [0 1 2 3 4 ]
+      android.tonemap.availableToneMapModes (130005): byte[3]
+        [0 1 2 ]
+      android.statistics.info.availableHotPixelMapModes (120006): byte[1]
+        [0 ]
+      android.sensor.referenceIlluminant1 (e0003): byte[1]
+        [D65 ]
+      android.sensor.referenceIlluminant2 (e0004): byte[1]
+        [17 ]
+      android.sensor.forwardMatrix1 (e0009): rational[9]
+        [(56 / 128) (49 / 128) ]
+        [(18 / 128) (28 / 128) ]
+        [(92 / 128) (8 / 128) ]
+        [(2 / 128) (12 / 128) ]
+        [(91 / 128) ]
+      android.sensor.forwardMatrix2 (e000a): rational[9]
+        [(56 / 128) (49 / 128) ]
+        [(18 / 128) (28 / 128) ]
+        [(92 / 128) (8 / 128) ]
+        [(2 / 128) (12 / 128) ]
+        [(91 / 128) ]
+      android.sensor.colorTransform1 (e0007): rational[9]
+        [(223 / 128) (-106 / 128) ]
+        [(-34 / 128) (-124 / 128) ]
+        [(240 / 128) (5 / 128) ]
+        [(5 / 128) (-19 / 128) ]
+        [(98 / 128) ]
+      android.sensor.colorTransform2 (e0008): rational[9]
+        [(317 / 128) (-219 / 128) ]
+        [(-56 / 128) (-137 / 128) ]
+        [(279 / 128) (-1 / 128) ]
+        [(10 / 128) (-23 / 128) ]
+        [(204 / 128) ]
+      android.sensor.calibrationTransform1 (e0005): rational[9]
+        [(128 / 128) (0 / 128) ]
+        [(0 / 128) (0 / 128) ]
+        [(128 / 128) (0 / 128) ]
+        [(0 / 128) (0 / 128) ]
+        [(128 / 128) ]
+      android.sensor.calibrationTransform2 (e0006): rational[9]
+        [(128 / 128) (0 / 128) ]
+        [(0 / 128) (0 / 128) ]
+        [(128 / 128) (0 / 128) ]
+        [(0 / 128) (0 / 128) ]
+        [(128 / 128) ]
+      android.request.availableRequestKeys (c000d): int32[56]
+        [0 1 2 3 ]
+        [65536 65537 65538 65539 ]
+        [65540 65541 65542 65543 ]
+        [65545 65546 65547 65549 ]
+        [65550 65551 65552 65553 ]
+        [131072 196608 262144 262145 ]
+        [262146 458752 458753 458754 ]
+        [458755 458756 458757 458758 ]
+        [524288 524289 524290 524291 ]
+        [524292 655360 786433 786437 ]
+        [851968 917504 917505 393216 ]
+        [1114115 917506 1048576 1114112 ]
+        [1114113 1114114 1114128 1245184 ]
+        [1245185 1245186 1245187 1441792 ]
+      android.request.availableResultKeys (c000e): int32[59]
+        [1 2 65539 65540 ]
+        [65567 65543 65568 65547 ]
+        [65570 65551 196608 262144 ]
+        [262145 262146 262149 458752 ]
+        [458753 458754 458755 458756 ]
+        [458757 458758 524288 524289 ]
+        [524290 524291 524296 524297 ]
+        [524292 655360 786433 851968 ]
+        [1048576 917504 917505 917506 ]
+        [917520 917522 917525 1441792 ]
+        [1245184 1245185 1245186 1245187 ]
+        [1114112 1114113 1114121 1114114 ]
+        [1114124 1114125 1114126 1114118 ]
+        [1114119 917523 917526 1114118 ]
+        [1114119 1114116 1114117 ]
+      android.request.availableCharacteristicsKeys (c000f): int32[80]
+        [65554 65555 65556 65557 ]
+        [65558 65559 65560 4 ]
+        [851981 1507329 983048 65561 ]
+        [65562 65563 65564 65565 ]
+        [327680 327681 458759 458760 ]
+        [589824 589825 589826 589827 ]
+        [589828 589829 589830 589831 ]
+        [524293 786438 786440 786442 ]
+        [786444 786445 786446 786447 ]
+        [786443 851972 851977 851978 ]
+        [851979 917513 917507 917508 ]
+        [917514 917511 917512 917509 ]
+        [917510 983040 983041 983042 ]
+        [983043 983044 983045 983046 ]
+        [983047 917515 917516 917517 ]
+        [917518 917529 1179648 1179649 ]
+        [1179650 1179651 1179652 1179653 ]
+        [393217 196610 655362 1245189 ]
+        [1179654 1245188 65574 65572 ]
+        [65573 1179655 1048578 1376256 ]
+      android.scaler.availableStallDurations (d000c): int64[108]
+        [33 3840 ]
+        [2160 258000000 ]
+        [33 2592 ]
+        [1944 161000000 ]
+        [33 2688 ]
+        [1512 144000000 ]
+        [33 2048 ]
+        [1536 133000000 ]
+        [33 1920 ]
+        [1080 116000000 ]
+        [33 1600 ]
+        [1200 108000000 ]
+        [33 1440 ]
+        [1080 103000000 ]
+        [33 1280 ]
+        [960 99000000 ]
+        [33 1280 ]
+        [768 91000000 ]
+        [33 1280 ]
+        [720 80000000 ]
+        [33 1024 ]
+        [768 75000000 ]
+        [33 800 ]
+        [600 68000000 ]
+        [33 864 ]
+        [480 67000000 ]
+        [33 800 ]
+        [480 66000000 ]
+        [33 720 ]
+        [480 65000000 ]
+        [33 640 ]
+        [480 61000000 ]
+        [33 640 ]
+        [360 59000000 ]
+        [33 480 ]
+        [640 55000000 ]
+        [33 480 ]
+        [360 49000000 ]
+        [33 480 ]
+        [320 49000000 ]
+        [33 352 ]
+        [288 48000000 ]
+        [33 320 ]
+        [240 45000000 ]
+        [33 240 ]
+        [320 35000000 ]
+        [33 176 ]
+        [144 30000000 ]
+        [33 160 ]
+        [120 25000000 ]
+        [33 144 ]
+        [176 18000000 ]
+        [32 3840 ]
+        [2160 200000000 ]
+      org.codeaurora.qcamera3.opaque_raw.opaque_raw_format (80030001): byte[1]
+        [0 ]
+      org.codeaurora.qcamera3.opaque_raw.opaque_raw_strides (80030000): int32[3]
+        [3840 2160 3840 ]
+      org.codeaurora.qcamera3.dualcam_calib_meta_data.dualcam_calib_meta_data_blob (800b0000): byte[440]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+        [0 0 0 0 0 0 0 0 ]
+      org.codeaurora.qcamera3.sensor_meta_data.is_mono_only (80080001): byte[1]
+        [0 ]
+      android.sensor.info.preCorrectionActiveArraySize (f000a): int32[4]
+        [0 0 4160 3120 ]
+  Camera1 API shim is using parameters:
+        CameraParameters::dump: mMap.size = 61
+	antibanding: auto
+	antibanding-values: off,60hz,50hz,auto
+	auto-exposure-lock: false
+	auto-exposure-lock-supported: true
+	auto-whitebalance-lock: false
+	auto-whitebalance-lock-supported: true
+	effect: none
+	effect-values: none,mono,negative,solarize,sepia,posterize,whiteboard,blackboard,aqua
+	exposure-compensation: 0
+	exposure-compensation-step: 0.166667
+	flash-mode: off
+	flash-mode-values: off,auto,on,torch
+	focal-length: 2.8
+	focus-areas: (0,0,0,0,0)
+	focus-distances: Infinity,Infinity,Infinity
+	focus-mode: fixed
+	focus-mode-values: fixed
+	horizontal-view-angle: 92.2466
+	jpeg-quality: 90
+	jpeg-thumbnail-height: 144
+	jpeg-thumbnail-quality: 90
+	jpeg-thumbnail-size-values: 0x0,176x144,240x144,256x144,240x160,256x154,240x240,320x240
+	jpeg-thumbnail-width: 256
+	max-exposure-compensation: 12
+	max-num-detected-faces-hw: 10
+	max-num-detected-faces-sw: 0
+	max-num-focus-areas: 0
+	max-num-metering-areas: 1
+	max-zoom: 99
+	metering-areas: (0,0,0,0,0)
+	min-exposure-compensation: -12
+	picture-format: jpeg
+	picture-format-values: jpeg
+	picture-size: 3840x2160
+	picture-size-values: 3840x2160,2592x1944,2688x1512,2048x1536,1920x1080,1600x1200,1440x1080,1280x960,1280x768,1280x720,1024x768,800x600,864x480,800x480,720x480,640x480,640x360,480x640,480x360,480x320,352x288,320x240,240x320,176x144,160x120,144x176
+	preferred-preview-size-for-video: 1920x1080
+	preview-format: yuv420sp
+	preview-format-values: yuv420p,yuv420sp,
+	preview-fps-range: 7000,30000
+	preview-fps-range-values: (15000,15000),(20000,20000),(24000,24000),(7000,30000),(30000,30000)
+	preview-frame-rate: 30
+	preview-frame-rate-values: 15,20,24,30
+	preview-size: 1920x1080
+	preview-size-values: 1920x1080,1600x1200,1440x1080,1280x960,1280x768,1280x720,1024x768,800x600,864x480,800x480,720x480,640x480,640x360,480x640,480x360,480x320,352x288,320x240,240x320,176x144,160x120,144x176
+	recording-hint: false
+	rotation: 0
+	scene-mode: auto
+	scene-mode-values: auto,landscape,snow,beach,sunset,night,portrait,sports,steadyphoto,candlelight,fireworks,party,night-portrait,theatre,action,
+	smooth-zoom-supported: false
+	vertical-view-angle: 60.6553
+	video-frame-format: android-opaque
+	video-size: 1920x1080
+	video-size-values: 3840x2160,2592x1944,2688x1512,2048x1536,1920x1080,1600x1200,1440x1080,1280x960,1280x768,1280x720,1024x768,800x600,864x480,800x480,720x480,640x480,640x360,480x640,480x360,480x320,352x288,320x240,240x320,176x144,160x120,144x176
+	video-snapshot-supported: true
+	video-stabilization: false
+	video-stabilization-supported: false
+	whitebalance: auto
+	whitebalance-values: auto,incandescent,fluorescent,warm-fluorescent,daylight,cloudy-daylight,twilight,shade,
+	zoom: 0
+	zoom-ratios: 100,103,106,109,112,115,118,121,124,127,130,133,136,139,142,145,148,151,154,157,160,163,166,169,172,175,178,181,184,187,190,193,196,199,203,206,209,212,215,218,221,224,227,230,233,236,239,242,245,248,251,254,257,260,263,266,269,272,275,278,	zoom-supported: true
+  Device 0 is closed, no client instance
+
+No active camera clients yet.
+
+Camera traces (0):
+  No camera traces collected.
