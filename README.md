@@ -1,3 +1,5 @@
+[![L16](https://github.com/helloavo/Light-L16-Archive/blob/main/Hardware/Images/Exploded.png)](https://htmlpreview.github.io/?https://raw.githubusercontent.com/helloavo/Light-L16-Archive/main/Hardware/Exploded%20View/camera.html)
+> (Click to go to interactive version)
 ## Aim
 This repository is for archiving everything about Light L16 Camera before it is all lost from the internet.
 
@@ -5,7 +7,7 @@ Now we have found the latest and last version of LightOS(1.3.5.1), my aim has sh
 This would allow us to still use the Hardware and break free of LightOS.
 
 ## Website Content
-The Light Website has been totally shut down, the [L16 photography] (https://support.light.co/l16-photography) Blog is still running but some images early blog posts have broken images. 
+The Light Website has been totally shut down, the [L16 photography](https://support.light.co/l16-photography) Blog is still running but some images early blog posts have broken images. 
 I have created a clone of the blog posts to preserve their content, it can be found under 'Guides' > 'L16 photography blog', open 'index.html' and chose which blog post to view.
 
 Light.Co can be viewed via the [WayBack Machine](https://web.archive.org/web/20191222062257/https://light.co/camera) (Last Snapshot that had the L16 product page is Dec 22, 2019).
