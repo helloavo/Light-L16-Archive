@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/image_ftu_subtitle_size" android:textColor="@color/image_ftu_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/subtitle_cover_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_alignEnd="@id/ftu_zoom_title" />
+        <light.co.lib.widget.TextViewRegular android:textSize="@dimen/image_ftu_text_size" android:textColor="@color/image_ftu_unit_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/cover_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/image_ftu_text_subtitle_diff" android:layout_centerInParent="true" android:layout_alignEnd="@id/ftu_zoom_title" />
+        <light.co.lib.widget.TextViewSemiBold android:layout_gravity="center_horizontal" android:id="@id/ftu_button" android:layout_marginTop="@dimen/image_ftu_diff_between_text_button" style="@style/ButtonStyle.Large.Positive" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<light.co.gallery.view.customviews.EditPresetMenuItemView android:background="@drawable/edit_menu_item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/editor_colormetrics_menu_item_height" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:paddingStart="@dimen/editor_colormetrics_menu_item_padding_start" android:paddingEnd="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/editor_preset_menu_label" />
+</light.co.gallery.view.customviews.EditPresetMenuItemView>

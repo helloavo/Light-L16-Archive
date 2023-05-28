@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/image_ftu_zoom_top_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/first_prime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip">
+        <light.co.lib.widget.TextViewRegular android:textSize="@dimen/image_ftu_zoom_number" android:textColor="@color/image_ftu_text_color" android:id="@id/zoom_number_first" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ftu_prime_35" android:layout_centerHorizontal="true" />
+        <light.co.lib.widget.TextViewRegular android:textSize="@dimen/image_ftu_zoom_number" android:textColor="@color/image_ftu_unit_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/image_ftu_margin_between_text" android:text="@string/ftu_prime_unit" android:layout_below="@id/zoom_number_first" />
+    </RelativeLayout>
+    <View android:background="@color/primaryMarkColorLightOpacity" android:layout_width="@dimen/ancillary_divider_width" android:layout_height="@dimen/image_ftu_prime_divider_height" android:layout_toRightOf="@id/first_prime" />
+    <RelativeLayout android:id="@id/second_prime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <light.co.lib.widget.TextViewRegular android:textSize="@dimen/image_ftu_zoom_number" android:textColor="@color/image_ftu_text_color" android:id="@id/zoom_number_second" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ftu_prime_75" android:layout_centerHorizontal="true" />
+        <light.co.lib.widget.TextViewRegular android:textSize="@dimen/image_ftu_zoom_number" android:textColor="@color/image_ftu_unit_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/image_ftu_margin_between_text" android:text="@string/ftu_prime_unit" android:layout_below="@id/zoom_number_second" />
+    </RelativeLayout>
+    <View android:background="@color/primaryMarkColorLightOpacity" android:layout_width="@dimen/ancillary_divider_width" android:layout_height="40.0dip" android:layout_toRightOf="@id/second_prime" />
+    <RelativeLayout android:id="@id/third_prime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+        <light.co.lib.widget.TextViewRegular android:textSize="@dimen/image_ftu_zoom_number" android:textColor="@color/image_ftu_text_color" android:id="@id/zoom_number_third" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ftu_prime_150" android:layout_centerHorizontal="true" />
+        <light.co.lib.widget.TextViewRegular android:textSize="@dimen/image_ftu_zoom_number" android:textColor="@color/image_ftu_unit_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/image_ftu_margin_between_text" android:text="@string/ftu_prime_unit" android:layout_below="@id/zoom_number_third" />
+    </RelativeLayout>
+</LinearLayout>

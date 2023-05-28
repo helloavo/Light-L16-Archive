@@ -1,0 +1,30 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: light_gallery.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- lib/arm64-v8a/libc++_shared.so
+- lib/arm64-v8a/libceres.so
+- lib/arm64-v8a/libcp.so
+- lib/arm64-v8a/liblricompression.so
+- lib/arm64-v8a/libnative-lib.so
+- png
+- gif
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '23'
+  targetSdkVersion: '23'
+sharedLibrary: false
+sparseResources: false
+unknownFiles: {}
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.7.0
+versionInfo:
+  versionCode: '4'
+  versionName: 1.3.5.1_0118_00037768

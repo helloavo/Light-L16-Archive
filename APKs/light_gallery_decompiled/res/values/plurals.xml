@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="delete_process_title_multi">
+        <item quantity="other">deleting %1$d of %2$d items</item>
+        <item quantity="one">deleting item</item>
+    </plurals>
+    <plurals name="remove_process_title_multi">
+        <item quantity="other">removing %1$d of %2$d items</item>
+        <item quantity="one">removing item</item>
+    </plurals>
+    <plurals name="restore_photo_title">
+        <item quantity="other">restoring %1$d of %2$d items</item>
+        <item quantity="one">restoring item</item>
+    </plurals>
+    <plurals name="share_item_count">
+        <item quantity="other">share %1$d items</item>
+        <item quantity="one">share one item</item>
+    </plurals>
+    <plurals name="share_to_usb_result_count">
+        <item quantity="other">%1$d files transferred</item>
+        <item quantity="zero">No files transferred</item>
+        <item quantity="one">One file transferred</item>
+    </plurals>
+    <plurals name="share_to_usb_title_file_count">
+        <item quantity="other">%1$d files to transfer to USB</item>
+        <item quantity="one">One file to transfer to USB</item>
+    </plurals>
+</resources>

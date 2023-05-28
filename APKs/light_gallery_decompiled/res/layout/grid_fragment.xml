@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_parent_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/gallery_grid_images" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_toolbar_container" android:layout_below="@id/top_toolbar_container" android:overScrollMode="never" />
+    <RelativeLayout android:id="@id/rl_empty_container" android:background="@android:color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/img_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/empty_gallery" android:layout_centerInParent="true" />
+        <light.co.lib.widget.TextViewRegular android:textSize="@dimen/gallery_multi_grid_empty_img_text_size" android:textColor="#ff404040" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0px" android:text="@string/gallery_empty_text" android:layout_below="@id/img_empty" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/top_toolbar_container" android:background="@android:color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <light.co.gallery.view.customviews.FastScroller android:id="@id/fastScroller" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_above="@id/bottom_toolbar_container" android:layout_below="@id/top_toolbar_container" android:layout_alignParentEnd="true" />
+    <RelativeLayout android:id="@id/floating_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0px" android:layout_above="@id/bottom_toolbar_container" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/bottom_toolbar_container" android:background="@android:color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height" android:layout_alignParentBottom="true" />
+    <include layout="@layout/processing_active" />
+    <FrameLayout android:id="@id/overlay_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

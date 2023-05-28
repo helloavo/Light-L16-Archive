@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:layout_width="@dimen/ftu_width" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/ftu_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <light.co.lib.widget.TextViewSemiBold android:id="@id/ftu_focus_fail" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/FtuStyle" />
+    <light.co.lib.widget.TextViewSemiBold android:id="@id/ftu_confirm" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/FtuConfirmButton" />
+</RelativeLayout>

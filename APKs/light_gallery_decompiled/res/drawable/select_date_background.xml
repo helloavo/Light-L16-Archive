@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/select_date_button_bg" />
+    <padding android:left="15.0dip" android:top="5.0dip" android:right="15.0dip" android:bottom="5.0dip" />
+    <corners android:radius="@dimen/floating_button_round_corner" />
+</shape>

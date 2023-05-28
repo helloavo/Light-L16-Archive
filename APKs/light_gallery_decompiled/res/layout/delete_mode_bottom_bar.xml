@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/grid_bottom_toolbar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/grid_delete_mode_toolbar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/gallery_grid_recovery_tool_bar_label_font_size" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/selectedNum" android:layout_width="0.0dip" android:layout_height="@dimen/button2_size" android:layout_weight="1.0" android:paddingStart="@dimen/delete_mode_toolbar_item_count_margin_start" />
+    <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/gallery_grid_recovery_tool_bar_label_font_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/remove" android:layout_width="wrap_content" android:layout_height="@dimen/button2_size" android:text="@string/grid_recovery_bar_remove_text" />
+    <android.support.v4.widget.Space android:layout_width="0.0px" android:layout_height="0.0px" android:layout_weight="0.25" />
+    <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/gallery_grid_recovery_tool_bar_label_font_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/restore" android:layout_width="wrap_content" android:layout_height="@dimen/button2_size" android:text="@string/grid_recovery_bar_restore_text" />
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/gallery_grid_tool_bar_margin_lr_42">
+        <ImageView android:id="@id/exit" android:layout_width="@dimen/button2_size" android:layout_height="@dimen/button2_size" android:src="@drawable/toolbar_cross" android:scaleType="center" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

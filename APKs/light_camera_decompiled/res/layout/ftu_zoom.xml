@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ftu_zoom_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ftu_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <light.co.lib.widget.TextViewRegular android:textSize="@dimen/image_ftu_text_size" android:textColor="@color/image_ftu_text_color" android:layout_gravity="end" android:id="@id/ftu_zoom_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="@color/image_ftu_shadow" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="2.0" android:layout_centerInParent="true" />
+        <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/image_ftu_subtitle_size" android:textColor="@color/image_ftu_text_color" android:layout_gravity="end" android:id="@id/ftu_zoom_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/image_ftu_margin_between_text" android:shadowColor="@color/image_ftu_shadow" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="2.0" android:layout_alignEnd="@id/ftu_zoom_title" />
+        <include android:id="@id/prime_values" android:visibility="gone" layout="@layout/ftu_prime_info_layout" />
+    </LinearLayout>
+    <ImageView android:id="@id/ftu_zoom_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/ftu_text_layout" android:layout_marginStart="@dimen/image_ftu_zoom_right_margin" android:layout_toEndOf="@id/ftu_text_layout" />
+    <light.co.lib.widget.TextViewSemiBold android:id="@id/ftu_zoom_next" android:layout_marginBottom="@dimen/image_ftu_focus_text_image_difference" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/ButtonStyle.Large.Positive" />
+</RelativeLayout>

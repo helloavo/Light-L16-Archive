@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/proximity_alert_layout_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/l16_proximity" android:background="@drawable/proximity_sensor_l16" android:layout_width="@dimen/proximity_l16_width" android:layout_height="@dimen/proximity_l16_height" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/proximity_block_1" android:visibility="gone" android:layout_width="@dimen/proximity_block_size" android:layout_height="@dimen/proximity_block_size" android:src="@drawable/proximity_sensor_left_top_block" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+        <ImageView android:id="@id/proximity_block_2" android:visibility="gone" android:layout_width="@dimen/proximity_block_size" android:layout_height="@dimen/proximity_block_size" android:src="@drawable/proximity_sensor_left_mid_block" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <ImageView android:id="@id/proximity_block_3" android:visibility="gone" android:layout_width="@dimen/proximity_block_size" android:layout_height="@dimen/proximity_block_size" android:src="@drawable/proximity_sensor_left_bottom_block" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" />
+        <ImageView android:id="@id/proximity_block_4" android:visibility="gone" android:layout_width="@dimen/proximity_block_size" android:layout_height="@dimen/proximity_block_size" android:src="@drawable/proximity_sensor_top_block" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/proximity_block_5" android:visibility="gone" android:layout_width="@dimen/proximity_block_size" android:layout_height="@dimen/proximity_block_size" android:src="@drawable/proximity_sensor_bottom_block" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

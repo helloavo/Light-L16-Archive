@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="@color/overheat_shutoff_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/warning_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginBottom="50.0dip" android:src="@drawable/ic_temperature" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/overheat_shutoff_text" android:gravity="center_horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/overheat_shutoff_msg" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/warning_icon" />
+</android.support.constraint.ConstraintLayout>

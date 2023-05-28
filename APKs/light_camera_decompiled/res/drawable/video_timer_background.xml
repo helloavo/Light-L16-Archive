@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/video_timer_background" />
+            <corners android:radius="5.0dip" />
+            <padding android:left="15.0dip" android:top="7.0dip" android:right="15.0dip" android:bottom="7.0dip" />
+        </shape>
+    </item>
+</selector>

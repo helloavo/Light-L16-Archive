@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/focus_controls" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <light.co.lib.widget.TextViewRegular android:textSize="@dimen/editor_colormetrics_menu_item_label_text" android:textColor="@color/default_text" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/depth" />
+    <light.co.gallery.view.customviews.EditorMenu android:orientation="vertical" android:id="@id/focus_menu_items" android:layout_width="fill_parent" android:layout_height="wrap_content" app:items="@array/focus_menu_items" />
+    <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/editor_colormetrics_menu_item_label_text" android:textColor="@color/default_text" android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/focus_instructions" />
+    <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip">
+        <Switch android:layout_gravity="center" android:id="@id/show_focal_region" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:thumb="@drawable/setting_switch_button_thumb" android:track="@drawable/setting_switch_button_bg" />
+        <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/editor_colormetrics_menu_item_label_text" android:textColor="@color/default_text" android:layout_gravity="center" android:id="@id/show_focal_region_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/focal_region" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip">
+        <Switch android:layout_gravity="center" android:id="@id/show_focal_depthmap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:thumb="@drawable/setting_switch_button_thumb" android:track="@drawable/setting_switch_button_bg" />
+        <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/editor_colormetrics_menu_item_label_text" android:textColor="@color/default_text" android:layout_gravity="center" android:id="@id/show_focal_depthmap_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/depth_map" />
+    </LinearLayout>
+    <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/editor_colormetrics_menu_item_label_text" android:textColor="@color/default_text" android:gravity="center" android:layout_gravity="center" android:id="@id/depth_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_viewpager" android:background="@color/edit_overlay_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/tool_arrow_left" android:padding="@dimen/gallery_edit_arrow_padding" android:visibility="invisible" android:layout_width="@dimen/gallery_edit_arrow_size" android:layout_height="@dimen/gallery_edit_arrow_size" android:src="@drawable/left_triangle" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    <android.support.v4.view.ViewPager android:id="@id/view_pager" android:layout_width="0.0px" android:layout_height="@dimen/gallery_edit_tool_h" android:overScrollMode="never" android:layout_toStartOf="@id/tool_arrow_right" android:layout_toEndOf="@id/tool_arrow_left" />
+    <ImageView android:id="@id/tool_arrow_right" android:padding="@dimen/gallery_edit_arrow_padding" android:visibility="invisible" android:layout_width="@dimen/gallery_edit_arrow_size" android:layout_height="@dimen/gallery_edit_arrow_size" android:src="@drawable/right_triangle" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

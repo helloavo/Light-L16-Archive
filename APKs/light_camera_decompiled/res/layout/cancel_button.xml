@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/text_size_small" android:textColor="@color/default_color" android:gravity="center" android:id="@id/cancel" android:background="@drawable/setting_popup_cancel_button_bg" android:layout_width="@dimen/setting_view_pop_up_btn_w" android:layout_height="@dimen/setting_view_pop_up_btn_h" android:text="@string/setting_pop_up_cancel_text" android:layout_marginStart="@dimen/setting_view_list_item_margin_bottom" android:layout_marginEnd="@dimen/setting_view_item_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

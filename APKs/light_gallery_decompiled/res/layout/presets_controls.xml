@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<light.co.gallery.view.customviews.EditorPresets android:orientation="vertical" android:background="@color/editor_colormetrics_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/editor_colormetrics_padding_start" android:paddingEnd="@dimen/editor_colormetrics_padding_end"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/presets_controls" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <light.co.lib.widget.TextViewRegular android:textSize="@dimen/editor_preset_header_text" android:textColor="@color/editor_menu_unselected_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/editor_colormetrics_menu_item_height" android:text="@string/presets" />
+        <ScrollView android:id="@id/preset_scroller" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <light.co.gallery.view.customviews.PresetsList android:orientation="vertical" android:id="@id/preset_list" android:layout_width="fill_parent" android:layout_height="wrap_content" app:dummyRows="4" />
+                <light.co.gallery.view.customviews.EditPresetMenuItemView android:id="@id/add_preset_button" android:background="@drawable/edit_menu_item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/editor_colormetrics_menu_item_height" android:layout_marginTop="3.0dip" android:layout_marginBottom="12.0dip" android:paddingStart="@dimen/editor_colormetrics_menu_item_padding_start" android:paddingEnd="8.0dip">
+                    <ImageView android:gravity="center" android:layout_gravity="center" android:layout_width="@dimen/edit_add_button_size" android:layout_height="@dimen/edit_add_button_size" android:src="@drawable/gallery_toolbar_circle_plus" />
+                </light.co.gallery.view.customviews.EditPresetMenuItemView>
+                <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/editor_preset_label_text" android:textColor="@color/editor_menu_unselected_text" android:gravity="center" android:layout_gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_presets_hint" />
+                <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/editor_preset_header_text" android:textColor="@color/editor_menu_unselected_text" android:gravity="center" android:layout_gravity="center" android:id="@id/manage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</light.co.gallery.view.customviews.EditorPresets>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="@dimen/battery_icon_width" android:layout_height="@dimen/battery_icon_width" android:src="@drawable/low_batt_4x" />
+    <TextView android:textSize="@dimen/battery_text_size" android:textColor="@color/primaryMarkColorLight" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/battery_text_margin_top" android:text="@string/low_battery_text" />
+</LinearLayout>

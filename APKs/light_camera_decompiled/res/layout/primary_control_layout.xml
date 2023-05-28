@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/gallery_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/camera_ui_border" android:layout_marginTop="@dimen/camera_ui_border" android:layout_marginRight="@dimen/control_gallery_margin_right" android:layout_marginBottom="@dimen/camera_ui_border" android:layout_alignParentTop="true" android:layout_alignParentRight="true" layout="@layout/thumbnail_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/control_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/top_control" android:visibility="gone" android:layout_width="@dimen/camera_button_width" android:layout_height="@dimen/camera_button_width" android:layout_margin="@dimen/camera_ui_border" />
+        <ImageView android:id="@id/shutter_button" android:visibility="gone" android:layout_width="@dimen/camera_button_width" android:layout_height="@dimen/camera_button_width" android:layout_margin="@dimen/camera_ui_border" android:src="@drawable/capture_control_shutter" />
+        <ImageView android:id="@id/bottom_control" android:visibility="gone" android:layout_width="@dimen/camera_button_width" android:layout_height="@dimen/camera_button_width" android:layout_margin="@dimen/camera_ui_border" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/toolbar_layout" android:layout_width="@dimen/control_toolbar_layout_width" android:layout_height="@dimen/control_toolbar_layout_width" android:layout_marginLeft="@dimen/control_toolbar_layout_margin" android:layout_marginTop="@dimen/control_toolbar_layout_margin" android:layout_marginRight="@dimen/control_toolbar_layout_margin" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/toolbar_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/toolbar_open" android:layout_centerHorizontal="true" />
+        <light.co.lib.widget.TextViewRegular android:textSize="@dimen/title_text_size" android:textColor="@color/textview_semibold" android:id="@id/toolbar_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/toolbar_icon" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/mode_switch_parent" android:background="@drawable/primary_control_mode_switch_gradient_width_background" android:visibility="gone" android:layout_width="@dimen/tool_mode_switch_width" android:layout_height="fill_parent" android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector android:variablePadding="true" android:constantSize="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <padding android:left="@dimen/button1_padding_pressed" android:top="@dimen/button1_padding_pressed" android:right="@dimen/button1_padding_pressed" android:bottom="@dimen/button1_padding_pressed" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding android:left="@dimen/button1_padding" android:top="@dimen/button1_padding" android:right="@dimen/button1_padding" android:bottom="@dimen/button1_padding" />
+        </shape>
+    </item>
+</selector>

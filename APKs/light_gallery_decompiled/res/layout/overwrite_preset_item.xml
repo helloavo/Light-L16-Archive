@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/edit_menu_item_bg" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/editor_preset_label_text" android:textColor="@color/editor_menu_unselected_text" android:id="@id/index" android:layout_width="20.0dip" android:layout_height="wrap_content" android:textAlignment="textEnd" />
+    <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/editor_preset_label_text" android:textColor="@color/default_text" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="30.0dip" />
+    <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/editor_preset_label_text" android:textColor="@color/editor_menu_unselected_text" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" />
+</RelativeLayout>

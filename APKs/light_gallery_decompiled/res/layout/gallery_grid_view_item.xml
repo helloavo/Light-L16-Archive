@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<light.co.gallery.adapter.GridItemView android:gravity="bottom" android:id="@id/item_view" android:background="@color/grid_item_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/thumbs" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:contentDescription="@string/empty" />
+    <RelativeLayout android:gravity="center" android:id="@id/selected" android:background="@color/grid_item_selected" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gallery_toolbar_multiselect" android:layout_centerInParent="true" android:contentDescription="@string/empty" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/top_indicators" android:background="@drawable/grid_view_item_top_gradient_bg" android:padding="@dimen/grid_view_item_top_bar_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/gallery_grid_video_mode_dimmed_ground_height" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/processed_indicator" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/badge_processed" android:layout_centerVertical="true" android:contentDescription="@string/empty" />
+        <ImageView android:id="@id/edited_indicator" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/gallery_toolbar_edit" android:layout_alignWithParentIfMissing="true" android:contentDescription="@string/empty" android:layout_toEndOf="@id/processed_indicator" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/video_mode" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/ic_video" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/play_video" android:contentDescription="@string/empty" />
+            <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/gallery_grid_video_mode_text_size" android:textColor="@android:color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tv_duration" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/empty" android:layout_marginStart="5.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_indicators" android:background="@drawable/grid_view_item_bottom_gradient_bg" android:paddingTop="@dimen/grid_view_item_bottom_bar_padding_top" android:paddingBottom="@dimen/grid_view_item_bottom_bar_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <light.co.gallery.view.customviews.MultiStars android:layout_gravity="center_horizontal" android:id="@id/rating" android:layout_width="wrap_content" android:layout_height="wrap_content" app:canSetStars="no" app:canToggleExpanded="false" app:expanded="true" app:outline="@drawable/badge_multi_star_outline" app:solid="@drawable/badge_multi_star_solid" app:spaceBetween="1.0dip" app:starCount="5" app:unsetStarsAreGone="true" />
+    </LinearLayout>
+</light.co.gallery.adapter.GridItemView>

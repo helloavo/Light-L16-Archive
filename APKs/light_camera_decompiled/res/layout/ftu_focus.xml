@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/image_ftu_subtitle_size" android:textColor="@color/image_ftu_text_color" android:id="@id/focus_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/image_ftu_focus_left_margin" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/focus_half_press" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/image_ftu_focus_left_margin" android:layout_marginTop="@dimen/image_ftu_focus_text_image_difference" android:layout_marginRight="@dimen/image_ftu_margin_between_text" android:layout_below="@id/focus_title">
+        <ImageView android:layout_width="@dimen/image_ftu_focus_width" android:layout_height="@dimen/image_ftu_focus_height" android:src="@drawable/ftu_half_press_to_focus" />
+        <light.co.lib.widget.TextViewRegular android:textSize="@dimen/image_ftu_text_size" android:textColor="@color/image_ftu_text_color" android:layout_gravity="center" android:id="@id/half_press_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/image_ftu_margin_between_text" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/focus_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/image_ftu_focus_text_image_difference" android:layout_below="@id/focus_title" android:layout_centerHorizontal="true">
+        <View android:layout_gravity="center" android:background="@color/image_ftu_text_color" android:layout_width="@dimen/image_ftu_line_width" android:layout_height="@dimen/image_ftu_diff_between_text_button" />
+        <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/image_ftu_text_size" android:textColor="@color/image_ftu_unit_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/image_ftu_focus_center_margin" android:text="@string/ftu_text_focus_center" />
+        <View android:layout_gravity="center" android:background="@color/image_ftu_text_color" android:layout_width="@dimen/image_ftu_line_width" android:layout_height="@dimen/image_ftu_diff_between_text_button" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/focus_tap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/image_ftu_focus_text_image_difference" android:layout_marginRight="@dimen/image_ftu_focus_left_margin" android:layout_toRightOf="@id/focus_line" android:layout_below="@id/focus_title">
+        <ImageView android:layout_width="@dimen/image_ftu_focus_width" android:layout_height="@dimen/image_ftu_focus_height" android:src="@drawable/ftu_tap_to_focus" />
+        <light.co.lib.widget.TextViewRegular android:textSize="@dimen/image_ftu_text_size" android:textColor="@color/image_ftu_text_color" android:layout_gravity="center" android:id="@id/tap_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/image_ftu_margin_between_text" />
+    </LinearLayout>
+    <light.co.lib.widget.TextViewSemiBold android:id="@id/ftu_focus_button" android:layout_marginTop="@dimen/image_ftu_focus_button_margin" android:layout_below="@id/focus_line" android:layout_centerHorizontal="true" style="@style/ButtonStyle.Large.Positive" />
+    <light.co.lib.widget.TextViewSemiBold android:id="@id/ftu_focus_next" android:layout_marginTop="@dimen/image_ftu_focus_button_margin" android:layout_below="@id/ftu_focus_button" android:layout_centerHorizontal="true" style="@style/ButtonStyle.Large.Positive" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/single_item_top_toolbar_height" android:layout_marginLeft="@dimen/gallery_mini_toolbar_margin" android:layout_marginTop="@dimen/gallery_mini_toolbar_margin_top" android:layout_marginRight="@dimen/gallery_mini_toolbar_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <light.co.lib.widget.PaddingImageView android:id="@id/open_gallery_grid" android:background="@drawable/button2_background" android:layout_width="@dimen/button2_size" android:layout_height="@dimen/button2_size" android:src="@drawable/toolbar_goto_grid" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/lock" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lock_16dp" android:layout_centerVertical="true" android:layout_toEndOf="@id/open_gallery_grid" />
+    <light.co.lib.widget.PaddingImageView android:id="@id/goto_capture" android:background="@drawable/button2_background" android:layout_width="@dimen/button2_size" android:layout_height="@dimen/button2_size" android:src="@drawable/toolbar_goto_capture" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/gallery_collection_menu_margin_item_bottom" android:layout_marginStart="@dimen/gallery_collection_menu_margin_item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/gallery_collection_menu_name_text_size" android:textColor="@android:color/white" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/gallery_collection_menu_text_margin" />
+    <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/gallery_collection_menu_count_text_size" android:textColor="@android:color/white" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

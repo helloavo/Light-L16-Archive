@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exposure_comp_value">
+        <item>+2</item>
+        <item>+1 ⅔</item>
+        <item>+1 ⅓</item>
+        <item>+1</item>
+        <item>+⅔</item>
+        <item>+⅓</item>
+        <item>0</item>
+        <item>-⅓</item>
+        <item>-⅔</item>
+        <item>-1</item>
+        <item>-1 ⅓</item>
+        <item>-1 ⅔</item>
+        <item>-2</item>
+    </string-array>
+    <string-array name="haptic_setting_list">
+        <item>off</item>
+        <item>normal</item>
+        <item>strong</item>
+    </string-array>
+    <string-array name="iso_value">
+        <item>3200</item>
+        <item>2400</item>
+        <item>1600</item>
+        <item>1250</item>
+        <item>1000</item>
+        <item>800</item>
+        <item>640</item>
+        <item>500</item>
+        <item>400</item>
+        <item>320</item>
+        <item>250</item>
+        <item>200</item>
+        <item>160</item>
+        <item>125</item>
+        <item>100</item>
+    </string-array>
+    <string-array name="metering_list">
+        <item>center-weighted</item>
+        <item>touch-weighted</item>
+    </string-array>
+    <string-array name="replay_tutorials_list">
+        <item>@string/ftu_tutorial_focus</item>
+        <item>@string/ftu_tutorial_zoom</item>
+        <item>@string/ftu_tutorial_exposure</item>
+        <item>@string/ftu_tutorial_video</item>
+        <item>@string/ftu_tutorial_edit</item>
+        <item>@string/ftu_tutorial_image_quality</item>
+    </string-array>
+    <string-array name="shutter_value">
+        <item>15</item>
+        <item>12</item>
+        <item>10</item>
+        <item>8</item>
+        <item>6</item>
+        <item>5</item>
+        <item>4</item>
+        <item>3.2</item>
+        <item>2.5</item>
+        <item>2</item>
+        <item>1.66</item>
+        <item>1.25</item>
+        <item>1</item>
+        <item>0.8</item>
+        <item>0.6</item>
+        <item>0.5</item>
+        <item>0.4</item>
+        <item>0.3</item>
+        <item>1/4</item>
+        <item>1/5</item>
+        <item>1/6</item>
+        <item>1/8</item>
+        <item>1/10</item>
+        <item>1/12</item>
+        <item>1/15</item>
+        <item>1/20</item>
+        <item>1/24</item>
+        <item>1/30</item>
+        <item>1/40</item>
+        <item>1/50</item>
+        <item>1/60</item>
+        <item>1/80</item>
+        <item>1/100</item>
+        <item>1/120</item>
+        <item>1/150</item>
+        <item>1/160</item>
+        <item>1/200</item>
+        <item>1/240</item>
+        <item>1/320</item>
+        <item>1/400</item>
+        <item>1/500</item>
+        <item>1/640</item>
+        <item>1/800</item>
+        <item>1/1000</item>
+        <item>1/1250</item>
+        <item>1/1600</item>
+        <item>1/2000</item>
+        <item>1/2500</item>
+        <item>1/3200</item>
+        <item>1/4000</item>
+        <item>1/5000</item>
+        <item>1/6400</item>
+        <item>1/8000</item>
+    </string-array>
+    <string-array name="sound_themes">
+        <item>classic</item>
+        <item>modern</item>
+        <item>off</item>
+    </string-array>
+</resources>

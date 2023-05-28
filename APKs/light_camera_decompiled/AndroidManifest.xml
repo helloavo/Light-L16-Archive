@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="android.uid.system" package="light.co.lightcamera" platformBuildVersionCode="10" platformBuildVersionName="1.3.5.1_0118_00025263">
+    <permission android:name="light.co.lightcamera.PREFS" android:protectionLevel="signature"/>
+    <permission android:name="light.co.lightcamera.CAMERA_EVENTS" android:protectionLevel="signature"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.usb.host"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_BLUETOOTH_SHARE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="light.co.lightcamera.PREFS"/>
+    <uses-permission android:name="light.co.theatermode.provider.READ_DATABASE"/>
+    <uses-permission android:name="light.co.gallery.MANAGE_PRESETS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="true" android:icon="@drawable/capture_4x" android:label="@string/app_name" android:largeHeap="true" android:name="light.co.camera.CameraApp" android:supportsRtl="true" android:theme="@style/AppThemeNoActionBar">
+        <meta-data android:name="light.co.camera.utils.GlideSetting" android:value="GlideModule"/>
+        <meta-data android:name="net.hockeyapp.android.appIdentifier" android:value="&quot;af0466d78eb544dba985c8452daa66aa&quot;"/>
+        <meta-data android:name="net.hockeyapp.android.appSecret" android:value="6008a4d5c8de0dcbf8d4d01709f6324f"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:icon="@drawable/capture_4x" android:launchMode="singleTask" android:name="light.co.camera.CameraActivity" android:theme="@style/Theme.AppCompat.NoActionBar.NoBackground.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="light.co.camera.view.alerts.AlertActivity" android:theme="@style/Theme.AppCompat.NoActionBar.NoBackground.FullScreen"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="befdcbe1042858acc6c8866696fd2894dc82e931"/>
+        <receiver android:name="light.co.camera.listener.CameraButtonIntentReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.CAMERA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="light.co.camera.listener.LocationReceiver">
+            <intent-filter>
+                <action android:name="light.co.intent.LOCATION_ALARM"/>
+                <action android:name="light.co.intent.LOCATION_UPDATE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:enabled="false" android:label="@string/log_viewer_title" android:launchMode="singleTask" android:name="light.co.camera.LogViewerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="light.co.camera.view.setting.SettingsActivity" android:theme="@style/Theme.AppCompat.NoActionBar.NoBackground.FullScreen"/>
+        <provider android:authorities="light.co.lightcamera" android:enabled="true" android:exported="true" android:name="light.co.camera.content.PrefsContentProvider" android:permission="light.co.lightcamera.PREFS"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.0.0"/>
+        <activity android:name="net.hockeyapp.android.UpdateActivity"/>
+        <activity android:name="net.hockeyapp.android.FeedbackActivity"/>
+        <activity android:name="net.hockeyapp.android.PaintActivity"/>
+        <activity android:name="net.hockeyapp.android.LoginActivity"/>
+        <activity android:name="net.hockeyapp.android.ExpiryInfoActivity"/>
+    </application>
+</manifest>

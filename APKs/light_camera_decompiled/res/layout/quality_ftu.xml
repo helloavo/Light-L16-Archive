@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="0.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/screensContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <light.co.lib.customviews.FtuScreen android:background="@drawable/quality_ftu_background_callout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:ftuBody="@string/quality_ftu_body1" app:ftuButton2="@string/next" app:ftuImage="@drawable/quality_ftu_preview" app:ftuSubTitle="@string/quality_ftu_subTitle1" app:ftuTitle="@string/quality_ftu_title1" />
+        <light.co.lib.customviews.FtuScreen android:background="@drawable/quality_ftu_background_callout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:ftuBody="@string/quality_ftu_body2" app:ftuButton1="@string/back" app:ftuButton2="@string/next" app:ftuImage="@drawable/quality_ftu_good" app:ftuSubTitle="@string/quality_ftu_subTitle2" app:ftuTitle="@string/quality_ftu_title2" />
+        <light.co.lib.customviews.FtuScreen android:background="@drawable/quality_ftu_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:ftuBody="@string/quality_ftu_body3" app:ftuButton1="@string/back" app:ftuButton2="@string/gotit" app:ftuImage="@drawable/quality_ftu_lumen" app:ftuSubTitle="@string/quality_ftu_subTitle3" app:ftuTitle="@string/quality_ftu_title3" />
+    </FrameLayout>
+    <light.co.lib.widget.PaddingImageView android:layout_gravity="end|center|top" android:id="@id/done" android:background="@drawable/button1_background" android:layout_width="@dimen/button1_size" android:layout_height="@dimen/button1_size" android:src="@drawable/cross_21dp" />
+</FrameLayout>

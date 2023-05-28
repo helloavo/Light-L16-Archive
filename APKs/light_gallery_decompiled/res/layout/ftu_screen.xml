@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quality_ftu_preview" android:layout_marginEnd="32.0dip" />
+    <light.co.lib.widget.TextViewSemiBold android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/image" android:layout_alignWithParentIfMissing="true" android:layout_toEndOf="@id/image" />
+    <light.co.lib.widget.TextViewSemiBold android:textSize="15.0sp" android:textColor="#ffb0b0b0" android:id="@id/subTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/title" android:layout_alignWithParentIfMissing="true" android:layout_toEndOf="@id/image" />
+    <light.co.lib.widget.TextViewRegular android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/subTitle" android:layout_alignWithParentIfMissing="true" android:lineSpacingMultiplier="1.3" android:layout_toEndOf="@id/image" />
+    <light.co.lib.widget.TextViewSemiBold android:id="@id/button1" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true" android:layout_marginEnd="8.0dip" android:layout_toStartOf="@id/button2" style="@style/ButtonStyle.Large" />
+    <light.co.lib.widget.TextViewSemiBold android:id="@id/button2" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" style="@style/ButtonStyle.Large.Positive" />
+</RelativeLayout>

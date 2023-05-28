@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="android.uid.system" package="light.co.lightgallery">
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-feature android:name="android.hardware.usb.host"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_BLUETOOTH_SHARE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="light.co.lightcamera.PREFS"/>
+    <uses-permission android:name="light.co.lightcamera.CAMERA_EVENTS"/>
+    <uses-permission android:name="light.co.gallery.NOTIFICATION_DISMISSED"/>
+    <permission android:name="light.co.gallery.NOTIFICATION_DISMISSED" android:protectionLevel="signature"/>
+    <permission android:name="light.co.gallery.MANAGE_PRESETS" android:protectionLevel="signature"/>
+    <application android:allowBackup="true" android:icon="@drawable/ic_gallery" android:label="@string/app_name" android:largeHeap="true" android:name="light.co.gallery.GalleryApp" android:supportsRtl="true" android:theme="@style/AppThemeNoActionBar">
+        <meta-data android:name="net.hockeyapp.android.appIdentifier" android:value="&quot;ebcdd70b94df4dfd9d006c15c2936609&quot;"/>
+        <meta-data android:name="net.hockeyapp.android.appSecret" android:value="d0ef2cfb5abac52884b3d602ed7086e8"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:icon="@drawable/ic_gallery" android:label="@string/gallery_name" android:launchMode="singleTask" android:name="light.co.gallery.GalleryActivity" android:theme="@style/Theme.AppCompat.NoActionBar.NoBackground.FullScreen" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="light.co.gallery.view.VideoPlayerActivity" android:theme="@style/FullscreenTheme"/>
+        <receiver android:enabled="true" android:exported="true" android:name="light.co.gallery.listener.GalleryReceiver">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_DETACHED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+                <action android:name="light.co.lightcamera.broadcast.ACTION_CAMERA_APP_STARTED"/>
+                <action android:name="light.co.lightcamera.broadcast.ACTION_CAMERA_ACTIVITY_STARTED"/>
+                <action android:name="light.co.lightcamera.broadcast.ACTION_CAMERA_ACTIVITY_STOPPED"/>
+                <action android:name="light.co.lightcamera.broadcast.ACTION_CAMERA_PREF_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="light.co.gallery.listener.NotificationReceiver" android:permission="light.co.gallery.NOTIFICATION_DISMISSED">
+            <intent-filter>
+                <action android:name="light.co.gallery.NOTIFICATION_DISMISSED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:enabled="false" android:label="@string/log_viewer_title" android:launchMode="standard" android:name="light.co.gallery.LogViewerActivity" android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/adjustment_presets" android:launchMode="singleInstance" android:name="light.co.gallery.view.ManagePresetsActivity" android:permission="light.co.gallery.MANAGE_PRESETS" android:theme="@style/Theme.AppCompat.NoActionBar.NoBackground.FullScreen"/>
+        <service android:exported="false" android:name="light.co.gallery.LriProcessorService"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.0.0"/>
+        <activity android:name="net.hockeyapp.android.UpdateActivity"/>
+        <activity android:name="net.hockeyapp.android.FeedbackActivity"/>
+        <activity android:name="net.hockeyapp.android.PaintActivity"/>
+        <activity android:name="net.hockeyapp.android.LoginActivity"/>
+        <activity android:name="net.hockeyapp.android.ExpiryInfoActivity"/>
+    </application>
+</manifest>

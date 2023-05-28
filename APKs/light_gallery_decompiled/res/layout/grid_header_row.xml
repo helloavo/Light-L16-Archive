@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black_overlay_bg" android:layout_width="fill_parent" android:layout_height="@dimen/gallery_multi_tv_current_date_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <light.co.lib.widget.TextViewRegular android:textSize="@dimen/gallery_multi_grid_header_textSize" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="@dimen/gallery_multi_tv_current_date_size" android:layout_centerVertical="true" android:paddingStart="12.0dip" android:layout_alignParentStart="true" />
+    <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/gallery_multi_grid_header_textSize" android:textColor="@android:color/white" android:id="@id/select_date" android:background="@drawable/floating_button_no_fill_background" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_date" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

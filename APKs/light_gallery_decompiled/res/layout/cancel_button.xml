@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<light.co.lib.widget.TextViewSemiBold android:id="@id/cancel" android:text="@string/cancel" android:layout_marginStart="@dimen/setting_view_list_item_margin_bottom" android:layout_marginEnd="@dimen/setting_view_item_margin" style="@style/ButtonStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

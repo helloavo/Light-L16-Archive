@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="gallery_info_item_order">
+        <item>@drawable/info_date</item>
+        <item>@drawable/info_exposure</item>
+        <item>@drawable/info_focal</item>
+        <item>@drawable/info_time</item>
+        <item>@drawable/info_speed</item>
+        <item>@drawable/info_filename</item>
+        <item>@drawable/info_iso</item>
+    </array>
+    <array name="gallery_info_item_order_video">
+        <item>@drawable/info_date</item>
+        <item>@drawable/info_resolution</item>
+        <item>@drawable/info_filesize</item>
+        <item>@drawable/info_time</item>
+        <item>@drawable/info_duration</item>
+        <item>@drawable/info_filename</item>
+    </array>
+</resources>

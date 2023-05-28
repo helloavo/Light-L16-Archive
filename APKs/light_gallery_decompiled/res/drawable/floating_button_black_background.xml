@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/black" />
+    <padding android:left="@dimen/floating_button_container_pad_rl" android:top="@dimen/floating_button_container_pad_tb" android:right="@dimen/floating_button_container_pad_rl" android:bottom="@dimen/floating_button_container_pad_tb" />
+    <corners android:radius="@dimen/floating_button_round_corner" />
+    <stroke android:width="@dimen/floating_button_bg_line_stroke" android:color="@android:color/white" />
+</shape>

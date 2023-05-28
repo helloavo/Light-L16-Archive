@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<light.co.gallery.view.customviews.ProgressBar android:orientation="horizontal" android:id="@id/progress_bar" android:background="@color/progress_bar_unused" android:layout_width="fill_parent" android:layout_height="@dimen/progress_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/used" android:background="@color/progress_bar_used" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <View android:id="@id/unused" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</light.co.gallery.view.customviews.ProgressBar>

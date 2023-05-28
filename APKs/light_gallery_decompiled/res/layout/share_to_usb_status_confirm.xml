@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<light.co.gallery.view.sharing.ShareToUsbConfirmView android:orientation="vertical" android:id="@id/share_to_usb_status_confirm" android:background="@color/dialog_bg" android:paddingLeft="@dimen/dialog_padding" android:paddingTop="@dimen/dialog_padding" android:paddingRight="@dimen/dialog_padding" android:paddingBottom="@dimen/dialog_padding_bottom" android:layout_width="@dimen/share_to_usb_confirm_width" android:layout_height="wrap_content" app:mode="confirm" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/button_text" android:textColor="@color/default_text" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dialog_title_margin_bottom" android:text="@string/share_to_usb_title_transferring" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/share_to_usb_confirm_message1_margin_bottom">
+        <light.co.lib.widget.TextViewRegular android:textSize="@dimen/default_text" android:textColor="#ffbfbfbf" android:id="@id/message_1_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_to_usb_space_required" />
+        <include layout="@layout/single_space" />
+        <light.co.lib.widget.TextViewRegular android:textSize="@dimen/default_text" android:textColor="@color/default_text" android:layout_gravity="end" android:id="@id/message_1_val" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <include android:id="@id/message_1_space_2" layout="@layout/single_space" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/message2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/share_to_usb_confirm_message2_margin_bottom">
+        <light.co.lib.widget.TextViewRegular android:textSize="@dimen/default_text" android:textColor="#ffbfbfbf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_to_usb_space_available" />
+        <include layout="@layout/single_space" />
+        <light.co.lib.widget.TextViewRegular android:textSize="@dimen/default_text" android:textColor="@color/default_text" android:layout_gravity="end" android:id="@id/message_2_val" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/progress_bar" android:layout_width="fill_parent" android:layout_height="@dimen/share_to_usb_confirm_progress_bar_height" android:layout_marginBottom="@dimen/share_to_usb_confirm_progress_bar_margin_bottom">
+        <View android:background="@drawable/progress_bar_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:id="@id/progress_bar_indicator" android:background="@drawable/progress_bar_value" android:layout_width="100.0px" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/delete_checkbox_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <CheckBox android:id="@id/delete_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="@color/default_text" />
+        <light.co.lib.widget.TextViewRegular android:textSize="@dimen/default_text" android:textColor="@color/default_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_to_usb_remove_after_transfer" android:labelFor="@id/delete_checkbox" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/folder_checkbox_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <CheckBox android:id="@id/folder_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="@color/default_text" />
+        <light.co.lib.widget.TextViewRegular android:textSize="@dimen/default_text" android:textColor="@color/default_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_to_usb_create_folders" android:labelFor="@id/folder_checkbox" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/skip_existing_checkbox_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/share_to_usb_confirm_checkbox_margin_bottom">
+        <CheckBox android:id="@id/skip_existing_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="@color/default_text" />
+        <light.co.lib.widget.TextViewRegular android:textSize="@dimen/default_text" android:textColor="@color/default_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_to_usb_skip_existing" android:labelFor="@id/skip_existing_checkbox" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/single_space" />
+        <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/default_text" android:textColor="@color/default_text" android:gravity="center" android:id="@id/cancel" android:background="@drawable/negative_button_bg" android:layout_width="@dimen/dialog_btn_w" android:layout_height="@dimen/dialog_btn_h" android:text="@string/cancel"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <include layout="@layout/single_space" />
+        <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/default_text" android:textColor="@color/default_text" android:gravity="center" android:id="@id/transfer" android:background="@drawable/positive_button_bg" android:layout_width="@dimen/dialog_btn_w" android:layout_height="@dimen/dialog_btn_h" android:text="@string/share_to_usb_transfer" />
+        <include android:id="@id/buttons_space_3" layout="@layout/single_space" />
+    </LinearLayout>
+</light.co.gallery.view.sharing.ShareToUsbConfirmView>

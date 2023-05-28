@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/burst_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/burst_wait_img" android:visibility="gone" android:layout_width="@dimen/burst_anim_dimen" android:layout_height="@dimen/burst_anim_dimen" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/burst_count_text_dimen" android:textColor="@android:color/white" android:id="@id/capture_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/burst_text_dimen" android:textColor="@android:color/white" android:id="@id/burst_capture_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/burst_text_top_margin" android:text="@string/burst_capture_saving_text" android:layout_below="@id/burst_wait_img" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

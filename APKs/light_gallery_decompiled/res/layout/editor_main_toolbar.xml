@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<light.co.gallery.overlays.EditorMainToolbar android:id="@id/main_toolbar" android:layout_width="@dimen/editor_main_toolbar_width" android:layout_height="fill_parent" android:layout_alignParentEnd="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/done_button" android:padding="@dimen/gallery_edit_padding" android:layout_width="@dimen/gallery_edit_tool_w" android:layout_height="@dimen/gallery_edit_tool_w" android:src="@drawable/edit_toolbar_done" android:scaleType="center" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/colormetrics_button" android:layout_width="@dimen/editor_main_button_width" android:layout_height="@dimen/editor_main_button_height" android:src="@drawable/gallery_toolbar_edit" style="@style/SelectableButton" />
+        <ImageView android:id="@id/geom_button" android:layout_width="@dimen/editor_main_button_width" android:layout_height="@dimen/editor_main_button_height" android:layout_marginTop="@dimen/editor_button_spacing" android:src="@drawable/edit_select_geom" style="@style/SelectableButton" />
+        <ImageView android:id="@id/focus_button" android:layout_width="@dimen/editor_main_button_width" android:layout_height="@dimen/editor_main_button_height" android:layout_marginTop="@dimen/editor_button_spacing" android:src="@drawable/edit_toolbar_focus" style="@style/SelectableButton" />
+        <ImageView android:id="@id/presets_button" android:layout_width="@dimen/editor_main_button_width" android:layout_height="@dimen/editor_main_button_height" android:layout_marginTop="@dimen/editor_button_spacing" android:src="@drawable/presets" style="@style/SelectableButton" />
+    </LinearLayout>
+    <ImageView android:id="@id/back_button" android:layout_width="@dimen/gallery_edit_tool_w" android:layout_height="@dimen/gallery_edit_tool_w" android:src="@drawable/edit_toolbar_cross" android:scaleType="center" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</light.co.gallery.overlays.EditorMainToolbar>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<light.co.gallery.adapter.GallerySingleItemView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <light.co.gallery.view.customviews.TouchImageView android:id="@id/image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/btn_play_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gallery_video_playback_playback_play" android:layout_centerInParent="true" />
+</light.co.gallery.adapter.GallerySingleItemView>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="@dimen/ancillary_item_width" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/list_item" android:padding="14.0px" android:layout_width="@dimen/ancillary_toolbar_icon_width" android:layout_height="@dimen/ancillary_toolbar_icon_width" android:layout_marginLeft="@dimen/ancillary_item_left_right_offset" android:layout_marginTop="@dimen/ancillary_item_top_bottom_offset" android:layout_marginRight="@dimen/ancillary_item_left_right_offset" android:layout_marginBottom="@dimen/ancillary_item_top_bottom_offset" />
+</LinearLayout>

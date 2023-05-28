@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button2_padding">10.0dip</dimen>
+    <dimen name="button2_padding_pressed">6.0dip</dimen>
+    <dimen name="button2_size">42.0dip</dimen>
+    <dimen name="editor_button_spacing">20.0dip</dimen>
+    <dimen name="editor_colormetrics_menu_item_height">50.0dip</dimen>
+    <dimen name="editor_colormetrics_menu_item_padding_start">9.0dip</dimen>
+    <dimen name="editor_colormetrics_menu_item_width">80.0dip</dimen>
+    <dimen name="editor_menu__item_icon_size">20.0dip</dimen>
+    <dimen name="ftu_container_margin_bottom">-50.0dip</dimen>
+    <dimen name="ftu_container_margin_top">60.0dip</dimen>
+    <dimen name="gallery_bottom_toolbar_width">204.0dip</dimen>
+    <dimen name="info_gridview_container_horizontal_space">4.0dip</dimen>
+    <dimen name="info_gridview_total_vertical_space">25.0dip</dimen>
+    <dimen name="info_item_text_size">12.0sp</dimen>
+    <dimen name="info_item_text_size_lat_lng">10.0sp</dimen>
+    <item type="dimen" name="info_size">@dimen/info_height</item>
+    <dimen name="max_toast_width">320.0dip</dimen>
+    <dimen name="single_item_callout_margin_bottom">-48.0dip</dimen>
+    <dimen name="toolbar_button_margin_lr">4.0px</dimen>
+    <dimen name="toolbar_button_margin_lr_grid">2.0dip</dimen>
+    <dimen name="toolbar_button_width">223.0px</dimen>
+</resources>

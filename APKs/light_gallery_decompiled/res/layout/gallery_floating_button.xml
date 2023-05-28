@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/button_container" android:layout_width="wrap_content" android:layout_height="@dimen/floating_button_max_size">
+        <ImageView android:id="@id/floating_point_btn_icon" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="@dimen/floating_button_ic_size" android:layout_height="@dimen/floating_button_ic_size" android:src="@drawable/edit_restore" android:layout_centerVertical="true" android:contentDescription="@string/empty" android:layout_marginEnd="@dimen/floating_button_ic_mr" />
+        <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/floating_button_text_title_size" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/floating_point_btn_text" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_toEndOf="@id/floating_point_btn_icon" />
+    </RelativeLayout>
+    <View android:id="@id/arrow_down" android:background="@drawable/floating_button_arrow_bg" android:visibility="gone" android:layout_width="@dimen/floating_button_arrow_down_width" android:layout_height="@dimen/floating_button_arrow_down_height" android:layout_marginTop="@dimen/floating_button_arrow_down_mar_t" android:layout_below="@id/button_container" android:layout_centerHorizontal="true" android:contentDescription="@string/empty" />
+</RelativeLayout>

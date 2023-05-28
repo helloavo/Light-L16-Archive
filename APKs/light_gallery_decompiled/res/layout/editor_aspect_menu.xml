@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<light.co.gallery.view.customviews.AspectMenuView android:id="@id/aspect_menu" android:background="@drawable/aspect_menu_bkg" android:paddingTop="@dimen/aspect_menu_padding_top" android:focusable="true" android:clickable="true" android:layout_width="@dimen/aspect_menu_width" android:layout_height="@dimen/aspect_menu_height" android:layout_centerVertical="true" android:layout_alignParentEnd="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/items" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/aspect_menu_items_margin_start" />
+    <View android:background="@color/aspect_menu_border" android:layout_width="fill_parent" android:layout_height="@dimen/aspect_menu_border" android:layout_alignTop="@id/aspect_menu_orientation_bar" />
+    <LinearLayout android:id="@id/aspect_menu_orientation_bar" android:layout_width="fill_parent" android:layout_height="@dimen/aspect_menu_orientation_bar_height" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <FrameLayout android:id="@id/aspect_menu_orientation_landscape" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:layout_gravity="center" android:background="@drawable/aspect_menu_orientation_bkg" android:layout_width="@dimen/aspect_menu_orientation_size2" android:layout_height="@dimen/aspect_menu_orientation_size1" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/aspect_menu_orientation_portrait" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:layout_gravity="center" android:background="@drawable/aspect_menu_orientation_bkg" android:layout_width="@dimen/aspect_menu_orientation_size1" android:layout_height="@dimen/aspect_menu_orientation_size2" />
+        </FrameLayout>
+    </LinearLayout>
+</light.co.gallery.view.customviews.AspectMenuView>

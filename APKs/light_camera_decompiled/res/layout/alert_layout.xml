@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/alert_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/rl_alert_info_container" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="@dimen/alert_container_margin_right" android:layout_marginStart="@dimen/alert_container_margin_left" app:layout_constraintDimensionRatio="1:1" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <Space android:id="@id/top_padding" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/img_storage" android:layout_width="@dimen/alert_icon_size" android:layout_height="@dimen/alert_icon_size" />
+            <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/alert_storage_text_size" android:textColor="@android:color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/remaining_image_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/alert_storage_text_margin" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/alert_battery_container_margin_top">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/img_battery" android:layout_width="@dimen/alert_icon_size" android:layout_height="@dimen/alert_icon_size" />
+            <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/alert_storage_text_size" android:textColor="@android:color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/text_battery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/alert_storage_text_margin" />
+        </LinearLayout>
+        <Space android:id="@id/bottom_padding" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_notification_alert" android:background="@drawable/alert_view_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/alert_notification_h" android:layout_marginTop="@dimen/alert_container_margin_right" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <ImageView android:id="@id/img_alert" android:layout_width="@dimen/alert_icon_size" android:layout_height="fill_parent" android:src="@drawable/low_batt_4x" android:layout_centerVertical="true" android:layout_marginStart="@dimen/alert_storage_text_margin" />
+        <light.co.lib.widget.TextViewRegular android:textSize="@dimen/alert_text_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/text_number_alert" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/alert_battery" android:layout_centerVertical="true" android:layout_marginStart="@dimen/alert_storage_text_margin" android:layout_toEndOf="@id/img_alert" />
+        <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/alert_text_size" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/text_info_alert" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alert_battery_notification" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_marginStart="@dimen/alert_container_margin_left" android:layout_marginEnd="@dimen/alert_storage_text_margin" android:layout_toEndOf="@id/text_number_alert" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

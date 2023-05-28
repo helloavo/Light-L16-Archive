@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <light.co.gallery.view.videoView.VideoView android:id="@id/play_video_texture" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" android:keepScreenOn="true" />
+    <light.co.gallery.view.videoView.VideoPlayerController android:id="@id/play_video_controller" android:background="@android:color/transparent" android:visibility="visible" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" android:animateLayoutChanges="true" />
+</RelativeLayout>

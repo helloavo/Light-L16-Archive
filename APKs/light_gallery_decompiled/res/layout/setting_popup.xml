@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/setting_popup_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/setting_view_list_item_margin_bottom">
+        <light.co.lib.widget.TextViewRegular android:textSize="@dimen/button_text" android:textColor="@color/default_text" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/setting_view_list_item_margin_bottom" android:layout_marginBottom="@dimen/setting_view_list_item_margin_bottom" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/setting_view_list_item_margin_bottom" android:layout_below="@id/title" android:layout_centerHorizontal="true">
+            <include android:id="@id/cancel" layout="@layout/cancel_button" />
+            <light.co.lib.widget.TextViewSemiBold android:text="@string/confirm" android:layout_marginEnd="@dimen/setting_view_list_item_margin_bottom" android:layout_toEndOf="@id/cancel" style="@style/ButtonStyle.Positive" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

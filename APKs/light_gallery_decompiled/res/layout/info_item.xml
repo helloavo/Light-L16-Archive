@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/info_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:layout_width="@dimen/info_item_icon_size" android:layout_height="@dimen/info_item_icon_size" android:src="@drawable/info_iso" android:layout_marginEnd="@dimen/info_item_margin_right" />
+    <light.co.lib.widget.TextViewRegular android:textSize="@dimen/info_item_text_size" android:textColor="@color/default_text" android:layout_gravity="center_vertical" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

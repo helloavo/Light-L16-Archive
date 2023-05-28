@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<light.co.camera.view.ripple.RippleViewOnClick android:background="@drawable/gallery_thumb_background" android:layout_width="wrap_content" android:layout_height="wrap_content" ripple:rv_centered="true" ripple:rv_zoom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" xmlns:ripple="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:background="@android:color/transparent" android:layout_width="@dimen/gallery_thumb_button_size" android:layout_height="@dimen/gallery_thumb_button_size" ripple:cardBackgroundColor="@android:color/transparent" ripple:cardCornerRadius="5.0dip" ripple:cardElevation="0.0dip">
+        <ImageView android:id="@id/gallerythumbicon" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/gallerylock" android:background="@color/lock_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="@dimen/lock_size" android:layout_height="@dimen/lock_size" android:src="@drawable/lock_4x" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/gallerythumbiconanim" android:visibility="gone" android:layout_width="@dimen/gallery_thumb_anim_dimen" android:layout_height="@dimen/gallery_thumb_anim_dimen" />
+    </android.support.v7.widget.CardView>
+</light.co.camera.view.ripple.RippleViewOnClick>

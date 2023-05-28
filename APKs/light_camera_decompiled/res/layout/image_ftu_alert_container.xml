@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/ftu_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <light.co.camera.view.ftu.ftuAlert.ImageFtuFocusFail android:id="@id/ftu_focus_failed" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:ftuCameraBody="@string/ftu_focus_fail_text" app:ftuCameraButton="@string/ftu_focus_fail_button_text" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ftu_container_margin_bottom">-50.0dip</dimen>
+    <dimen name="ftu_container_margin_top">60.0dip</dimen>
+</resources>

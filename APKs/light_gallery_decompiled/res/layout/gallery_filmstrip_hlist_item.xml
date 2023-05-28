@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/rl_filmstrip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:id="@id/view_top_line" android:background="@color/shadowColor" android:layout_width="fill_parent" android:layout_height="@dimen/filmstrip_photo_top_gap" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:background="@color/shadowColor" android:layout_width="@dimen/filmstrip_photo_left_right_gap" android:layout_height="@dimen/filmstrip_photo_height" />
+            <View android:id="@id/view_selected_left_border" android:background="@color/shadowColor" android:visibility="gone" android:layout_width="@dimen/filmstrip_selected_photo_left_right_gap" android:layout_height="@dimen/filmstrip_photo_height" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/img_gallery" android:background="@drawable/film_strip_center_item_decoration" android:layout_width="wrap_content" android:layout_height="@dimen/filmstrip_photo_height" android:scaleType="fitXY" />
+            <View android:id="@id/view_selected_right_border" android:background="@color/shadowColor" android:visibility="gone" android:layout_width="@dimen/filmstrip_selected_photo_left_right_gap" android:layout_height="@dimen/filmstrip_photo_height" />
+            <View android:background="@color/shadowColor" android:layout_width="@dimen/filmstrip_photo_left_right_gap" android:layout_height="@dimen/filmstrip_photo_height" />
+        </LinearLayout>
+        <View android:id="@id/view_bottom_line" android:background="@color/shadowColor" android:layout_width="fill_parent" android:layout_height="@dimen/filmstrip_photo_top_gap" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/btn_play_video" android:layout_width="@dimen/filmstrip_video_icon_size" android:layout_height="@dimen/filmstrip_video_icon_size" android:src="@drawable/gallery_video_playback_playback_play" />
+</FrameLayout>

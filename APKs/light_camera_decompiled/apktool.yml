@@ -1,0 +1,27 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: light_camera.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- gif
+- png
+- jpg
+- ogg
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '23'
+  targetSdkVersion: '27'
+sharedLibrary: false
+sparseResources: false
+unknownFiles: {}
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.7.0
+versionInfo:
+  versionCode: '10'
+  versionName: 1.3.5.1_0118_00025263

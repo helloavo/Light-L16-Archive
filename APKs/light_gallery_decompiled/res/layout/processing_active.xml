@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<light.co.gallery.view.process.ProcessProgressOverlay android:orientation="vertical" android:id="@id/progress_overlay" android:background="#cc000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/progress_bar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/progress_gif" android:layout_width="@dimen/processing_indicator_size" android:layout_height="@dimen/processing_indicator_size" android:layout_marginBottom="@dimen/process_progress_bottom_margin" />
+        <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/button_text" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include android:layout_width="wrap_content" android:layout_height="@dimen/button_height" android:layout_marginBottom="@dimen/process_cancel_bottom_margin" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" layout="@layout/cancel_button" />
+</light.co.gallery.view.process.ProcessProgressOverlay>

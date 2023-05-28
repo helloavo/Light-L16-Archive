@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_parent_layout" android:background="@color/collection_layout_bg" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/back_button" android:layout_width="@dimen/gallery_collection_menu_back_button_w" android:layout_height="@dimen/gallery_collection_menu_back_button_w" android:layout_marginTop="@dimen/gallery_collection_menu_back_button_margin" android:layout_marginBottom="@dimen/gallery_collection_menu_back_button_margin" android:src="@drawable/cross_21dp" android:scaleType="center" android:layout_centerVertical="true" android:layout_marginStart="@dimen/gallery_collection_menu_back_button_margin_left" android:layout_alignParentStart="true" />
+        <light.co.lib.widget.TextViewRegular android:textSize="@dimen/gallery_collection_menu_storage_text_size" android:textColor="@color/collection_storage_text_bg" android:id="@id/tv_storage_info" android:layout_width="wrap_content" android:layout_height="@dimen/gallery_collection_menu_icon_size" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/gallery_collection_menu_margin_item" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@id/top_bar">
+        <LinearLayout android:orientation="vertical" android:id="@id/items" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </ScrollView>
+</RelativeLayout>

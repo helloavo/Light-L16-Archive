@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/hud_layout_back" android:layout_width="@dimen/hud_layout_width" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:hud="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <light.co.camera.view.rotate.RotateLayout android:id="@id/hud_ev_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/hud_layout_margin" hud:angle="0">
+            <include android:id="@id/hud_ev_item" layout="@layout/hud_text_items" />
+        </light.co.camera.view.rotate.RotateLayout>
+        <light.co.camera.view.rotate.RotateLayout android:id="@id/hud_iso_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/hud_layout_margin" android:layout_below="@id/hud_ev_layout" hud:angle="0">
+            <include android:id="@id/hud_iso_item" layout="@layout/hud_text_items" />
+        </light.co.camera.view.rotate.RotateLayout>
+        <light.co.camera.view.rotate.RotateLayout android:id="@id/hud_shutter_speed_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/hud_layout_margin" android:layout_below="@id/hud_iso_layout" hud:angle="0">
+            <include android:id="@id/hud_ss_item" layout="@layout/hud_text_items" />
+        </light.co.camera.view.rotate.RotateLayout>
+        <light.co.camera.view.rotate.RotateLayout android:id="@id/hud_zoom_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/hud_layout_margin" android:layout_below="@id/hud_shutter_speed_layout" hud:angle="0">
+            <include android:id="@id/hud_zoom_item" layout="@layout/hud_text_items" />
+        </light.co.camera.view.rotate.RotateLayout>
+        <light.co.camera.view.rotate.RotateLayout android:id="@id/hud_resolution_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/hud_layout_margin" android:layout_below="@id/hud_zoom_layout" hud:angle="0">
+            <include android:id="@id/hud_resolution_item" layout="@layout/hud_text_items" />
+        </light.co.camera.view.rotate.RotateLayout>
+    </RelativeLayout>
+</RelativeLayout>

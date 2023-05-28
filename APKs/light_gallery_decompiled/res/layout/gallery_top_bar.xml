@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/gallery_top_toolbar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/button2_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_mini_toolbar_gallery" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gallery_grid_tool_bar_margin_lr_42" android:layout_marginTop="@dimen/gallery_mini_toolbar_margin_top" android:layout_marginRight="@dimen/gallery_grid_tool_bar_margin_lr_42">
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/collection_menu" android:paddingLeft="36.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+            <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/gallery_grid_tool_bar_label_font_size" android:textColor="@android:color/white" android:id="@id/collection_menu_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/all" android:layout_centerVertical="true" app:scaleFactor="1.2" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/collection" android:layout_centerVertical="true" android:layout_toEndOf="@id/collection_menu_label" />
+        </RelativeLayout>
+        <light.co.lib.widget.PaddingImageView android:id="@id/start_selection" android:background="@drawable/button2_background" android:layout_width="@dimen/button2_size" android:layout_height="@dimen/button2_size" android:src="@drawable/top_bar_select" android:scaleType="fitCenter" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <LinearLayout android:id="@id/usb_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <ImageView android:layout_width="@dimen/default_text" android:layout_height="@dimen/default_text" android:src="@drawable/share_usb" android:contentDescription="@string/cant_edit_with_usb" android:alpha="0.8" />
+            <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/default_text" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cant_edit_with_usb" android:includeFontPadding="false" android:alpha="0.8" android:layout_marginStart="5.0dip" />
+        </LinearLayout>
+        <light.co.lib.widget.PaddingImageView android:id="@id/gallery_go_to_camera" android:background="@drawable/button2_background" android:layout_width="@dimen/button2_size" android:layout_height="@dimen/button2_size" android:src="@drawable/toolbar_goto_capture" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/select_all_container" android:background="@color/select_all_bg" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/gallery_grid_tool_bar_label_font_size" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/select_all" android:background="@drawable/floating_button_no_fill_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_all" app:scaleFactor="1.2" />
+    </FrameLayout>
+</RelativeLayout>

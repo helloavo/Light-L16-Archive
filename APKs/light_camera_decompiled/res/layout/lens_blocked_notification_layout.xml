@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/proximity_block_text_size" android:textColor="@android:color/white" android:id="@id/lens_block_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/proximity_notification_title"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

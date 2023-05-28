@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/gallery_edit_ftu_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ImageView android:id="@id/anim_circle" android:background="@drawable/ftu_animated_circle" android:layout_width="@dimen/edit_ftu_anim_circle" android:layout_height="@dimen/edit_ftu_anim_circle" android:layout_centerVertical="true" android:layout_marginStart="@dimen/edit_ftu_anim_circle_edit_margin_start" android:layout_marginEnd="@dimen/edit_ftu_anim_circle_edit_margin_end" android:layout_toEndOf="@id/ln_text_container" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ln_text_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/edit_ftu_tag_text_size" android:textColor="@android:color/white" android:id="@id/tag_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/edit_ftu_wheel_main_text" android:textAlignment="textEnd" />
+            <TextView android:textSize="@dimen/edit_ftu_tag_sub_text_size" android:textColor="@android:color/white" android:id="@id/tag_sub_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/edit_ftu_tag_sub_text_edit_margin" android:text="@string/edit_ftu_edit_sub_text" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/edit_ftu_skip_text_size" android:textColor="@android:color/holo_blue_dark" android:id="@id/button_skip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/edit_ftu_wheel_margin" android:layout_marginTop="12.0dip" android:layout_marginRight="@dimen/edit_ftu_wheel_margin" android:text="@string/edit_ftu_wheel_skip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_marginEnd="12.0dip" />
+</RelativeLayout>

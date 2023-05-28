@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/history_controls" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/undo" android:layout_width="@dimen/gallery_edit_tool_w" android:layout_height="@dimen/gallery_edit_tool_w" android:src="@drawable/edit_undo" android:scaleType="center" />
+    <android.support.v4.widget.Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageView android:id="@id/redo" android:layout_width="@dimen/gallery_edit_tool_w" android:layout_height="@dimen/gallery_edit_tool_w" android:src="@drawable/edit_redo" android:scaleType="center" />
+    <android.support.v4.widget.Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageView android:id="@id/restore" android:layout_width="@dimen/gallery_edit_tool_w" android:layout_height="@dimen/gallery_edit_tool_w" android:src="@drawable/edit_restore" android:scaleType="center" />
+</LinearLayout>

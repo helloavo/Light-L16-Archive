@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<light.co.gallery.view.sharing.ShareScreen android:id="@id/rl_toolbar_gallery_parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_toolbar_gallery_share_container" android:background="@drawable/gallery_share_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/rl_bottom_toolbar">
+        <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/gallery_share_toolbar_process_text_size" android:textColor="@color/share_text" android:id="@id/progress_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gallery_share_toolbar_title_margin" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center" android:id="@id/share_buttons" android:layout_width="900.0px" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <light.co.lib.widget.PaddingImageView android:layout_gravity="center_horizontal" android:id="@id/bluetooth" android:background="@drawable/button1_background2" android:layout_width="@dimen/button1_size" android:layout_height="@dimen/button1_size" android:src="@drawable/share_bluetooth" />
+                <light.co.lib.widget.TextViewRegular android:textSize="@dimen/gallery_share_toolbar_text_size" android:textColor="@color/share_text" android:gravity="bottom" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/gallery_share_toolbar_text_h" android:text="@string/share_bluetooth" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <light.co.lib.widget.PaddingImageView android:layout_gravity="center_horizontal" android:id="@id/usb" android:background="@drawable/button1_background2" android:layout_width="@dimen/button1_size" android:layout_height="@dimen/button1_size" android:src="@drawable/share_usb" android:scaleType="centerInside" />
+                <light.co.lib.widget.TextViewRegular android:textSize="@dimen/gallery_share_toolbar_text_size" android:textColor="@color/share_text" android:gravity="bottom" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/gallery_share_toolbar_text_h" android:text="@string/share_usb" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_bottom_toolbar" android:background="@color/share_bg" android:layout_width="fill_parent" android:layout_height="@dimen/gallery_share_toolbar_title_h" android:layout_alignParentBottom="true">
+        <include android:id="@id/progress_bar" android:visibility="gone" layout="@layout/progress_bar" />
+        <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/gallery_share_toolbar_text_size" android:textColor="@color/share_text" android:id="@id/share_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gallery_share_toolbar_title_margin" android:text="@string/share_item" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <light.co.lib.widget.PaddingImageView android:id="@id/close" android:background="@drawable/button1_background" android:layout_width="@dimen/button1_size" android:layout_height="@dimen/button1_size" android:src="@drawable/toolbar_cross" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <include android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/share_to_usb_status" />
+</light.co.gallery.view.sharing.ShareScreen>

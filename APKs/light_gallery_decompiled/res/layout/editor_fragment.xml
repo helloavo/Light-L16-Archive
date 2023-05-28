@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/main_toolbar" layout="@layout/editor_main_toolbar" />
+    <FrameLayout android:id="@id/colormetrics_container" android:background="@color/editor_colormetrics_bg" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toStartOf="@id/main_toolbar">
+        <light.co.gallery.view.customviews.EditorHistoryController android:orientation="vertical" android:id="@id/colormetrics" android:layout_width="@dimen/editor_colormetrics_width" android:layout_height="fill_parent" android:paddingStart="@dimen/editor_colormetrics_padding_start" android:paddingEnd="@dimen/editor_colormetrics_padding_end">
+            <include android:id="@id/history_controls" layout="@layout/history_controls" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include android:id="@id/colormetric_controls" layout="@layout/editor_colormetric_controls" />
+                <include android:id="@id/presets_controls" android:visibility="gone" layout="@layout/presets_controls" />
+                <include android:id="@id/focus_controls" android:visibility="gone" layout="@layout/focus_controls" />
+            </FrameLayout>
+        </light.co.gallery.view.customviews.EditorHistoryController>
+        <include android:id="@id/depth_progress_overlay" android:layout_width="@dimen/editor_colormetrics_width" android:layout_height="fill_parent" layout="@layout/processing_active" />
+    </FrameLayout>
+    <include android:id="@id/geometry" android:visibility="gone" android:layout_width="@dimen/editor_geom_menu_width" android:layout_height="fill_parent" android:layout_centerVertical="true" android:layout_toStartOf="@id/main_toolbar" layout="@layout/editor_geometry_menu" />
+    <RelativeLayout android:id="@id/image_view_container" android:background="@color/edit_image_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignWithParentIfMissing="true" android:layout_toStartOf="@id/colormetrics_container">
+        <light.co.gallery.view.customviews.RangeIndicator android:id="@id/range_indicator" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" app:labelMode="none" />
+        <light.co.gallery.view.customviews.TouchImageView android:id="@id/image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layerType="software" android:layout_toEndOf="@id/range_indicator" />
+        <light.co.gallery.view.customviews.TouchImageView android:id="@id/depth_map" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_alignWithParentIfMissing="true" android:layout_toEndOf="@id/range_indicator" />
+        <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/editor_colormetrics_menu_item_label_text" android:textColor="@color/default_text" android:id="@id/range_value" android:background="@drawable/range_value_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="4.0dip" android:layout_toEndOf="@id/range_indicator" />
+        <SeekBar android:id="@id/alpha_seek_bar" android:background="#44000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="255" android:progress="128" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/focus_center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/focus_center" android:layout_alignLeft="@id/image_view" android:layout_alignTop="@id/image_view" />
+    </RelativeLayout>
+    <light.co.gallery.view.customviews.CropImageView android:id="@id/crop_image_view" android:background="@color/edit_image_bg" android:padding="@dimen/editor_crop_view_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="matrix" android:layout_alignWithParentIfMissing="true" android:layerType="software" android:layout_toStartOf="@id/geometry" />
+    <include layout="@layout/loading_screen" />
+    <include android:visibility="gone" android:layout_width="@dimen/aspect_menu_width" android:layout_height="@dimen/aspect_menu_height" android:layout_alignBottom="@id/geometry" android:layout_toStartOf="@id/geometry" layout="@layout/editor_aspect_menu" />
+    <include android:id="@id/editor_progress_bar" android:visibility="gone" layout="@layout/progress_bar" />
+    <FrameLayout android:id="@id/confirm_close_dialog" android:background="@color/dim_background" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_gravity="center" android:background="@drawable/setting_popup_bg" android:padding="28.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/button_text" android:textColor="@color/default_text" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" android:text="@string/edit_save_warning" android:layout_centerHorizontal="true" />
+            <light.co.lib.widget.TextViewSemiBold android:id="@id/cancel_button" android:text="@string/cancel" android:layout_below="@id/title" android:layout_marginEnd="5.0dip" style="@style/ButtonStyle.Positive" />
+            <light.co.lib.widget.TextViewSemiBold android:id="@id/discard_button" android:text="@string/discard" android:layout_below="@id/title" android:layout_marginStart="5.0dip" android:layout_toEndOf="@id/cancel_button" style="@style/ButtonStyle" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

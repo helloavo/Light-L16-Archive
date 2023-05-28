@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/ancillary_list_item" android:layout_width="@dimen/ancillary_item_width" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/list_item_iv" android:visibility="gone" android:layout_width="@dimen/video_toolbar_icon_width" android:layout_height="@dimen/video_toolbar_icon_height" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <light.co.lib.widget.TextViewSemiBold android:textSize="16.0sp" android:textColor="@color/ancillary_toolbar_text" android:id="@id/list_item_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

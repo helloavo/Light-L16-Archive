@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:id="@id/listview_background_shape"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/hud_marker_drawable_width" android:color="@color/text_shadow_color" />
+    <padding android:left="@dimen/hud_marker_drawable_width" android:top="@dimen/hud_marker_drawable_width" android:right="@dimen/hud_marker_drawable_width" android:bottom="@dimen/hud_marker_drawable_width" />
+    <corners android:radius="@dimen/hud_marker_drawable_radius" />
+    <solid android:color="@color/selectionColor" />
+</shape>

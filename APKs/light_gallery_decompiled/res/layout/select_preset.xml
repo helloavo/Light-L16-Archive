@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff000000" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/preset_dialog_header" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/editor_preset_input_text" android:textColor="@color/editor_menu_unselected_text" android:id="@id/hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/overwrite_preset_hint" android:layout_marginStart="5.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/preset_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

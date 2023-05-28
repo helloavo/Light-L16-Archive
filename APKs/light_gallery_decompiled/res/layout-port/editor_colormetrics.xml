@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<light.co.gallery.view.customviews.EditorHistoryController android:orientation="horizontal" android:background="@color/editor_colormetrics_bg" android:layout_width="fill_parent" android:layout_height="@dimen/editor_colormetrics_height" android:paddingStart="@dimen/editor_colormetrics_padding_start" android:paddingEnd="@dimen/editor_colormetrics_padding_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/history_controls" />
+    <android.support.v4.widget.Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <light.co.lib.view.HistogramView android:layout_gravity="center" android:id="@id/histogram" android:background="#88000000" android:layout_width="@dimen/editor_colormetrics_histogram_width" android:layout_height="@dimen/editor_colormetrics_histogram_height" android:minWidth="@dimen/histogram_icon_width" android:minHeight="@dimen/histogram_icon_height" />
+</light.co.gallery.view.customviews.EditorHistoryController>

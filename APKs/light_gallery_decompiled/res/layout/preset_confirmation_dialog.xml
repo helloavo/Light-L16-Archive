@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#88000000" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:mode="confirm" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/share_to_usb_status_confirm" android:background="@color/dialog_bg" android:paddingLeft="@dimen/dialog_padding" android:paddingTop="@dimen/dialog_padding" android:paddingRight="@dimen/dialog_padding" android:paddingBottom="@dimen/dialog_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/button_text" android:textColor="@color/default_text" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dialog_title_margin_bottom" android:maxWidth="@dimen/max_toast_width" android:text="@string/remove_preset_q" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/default_text" android:textColor="@color/button_text" android:gravity="center" android:id="@id/cancel" android:background="@drawable/negative_button_bg" android:layout_width="@dimen/dialog_btn_w" android:layout_height="@dimen/dialog_btn_h" android:text="@string/cancel" android:layout_marginEnd="5.0dip" />
+            <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/default_text" android:textColor="@color/button_text" android:gravity="center" android:id="@id/confirm" android:background="@drawable/positive_button_bg" android:layout_width="@dimen/dialog_btn_w" android:layout_height="@dimen/dialog_btn_h" android:text="@string/remove" android:layout_marginStart="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

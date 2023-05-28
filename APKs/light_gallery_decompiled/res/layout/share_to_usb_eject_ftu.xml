@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/share_to_usb_eject_ftu" android:background="@color/dialog_bg" android:padding="@dimen/dialog_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <light.co.lib.widget.TextViewRegular android:textSize="@dimen/default_text" android:textColor="@color/default_text" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_to_usb_eject_ftu" />
+    <light.co.lib.widget.TextViewSemiBold android:layout_gravity="center_horizontal" android:id="@id/got_it" android:layout_marginTop="@dimen/button_height" android:text="@string/gotit" style="@style/ButtonStyle.Large.Positive"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

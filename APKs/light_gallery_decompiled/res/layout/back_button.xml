@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<light.co.lib.widget.PaddingImageView android:id="@id/back_button" android:background="@drawable/button2_background" android:layout_width="@dimen/button2_size" android:layout_height="@dimen/button2_size" android:src="@drawable/gallery_toolbar_back" android:layout_marginStart="@dimen/toolbar_button_margin_lr_grid" android:layout_marginEnd="@dimen/toolbar_button_margin_lr_grid"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

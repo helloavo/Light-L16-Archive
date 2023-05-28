@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/setting_popup_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/setting_view_list_item_margin_bottom">
+        <light.co.lib.widget.TextViewRegular android:textSize="@dimen/text_size_small" android:textColor="@color/default_color" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/setting_view_list_item_margin_bottom" android:layout_marginBottom="@dimen/setting_view_list_item_margin_bottom" android:text="@string/empty" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/setting_view_list_item_margin_bottom" android:layout_below="@id/title" android:layout_centerHorizontal="true">
+            <include android:id="@id/cancel" layout="@layout/cancel_button" />
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/default_color" android:gravity="center" android:id="@id/confirm" android:background="@drawable/setting_popup_confirm_button_bg" android:layout_width="@dimen/setting_view_pop_up_btn_w" android:layout_height="@dimen/setting_view_pop_up_btn_h" android:text="@string/setting_pop_up_confirm_text" android:layout_marginEnd="@dimen/setting_view_list_item_margin_bottom" android:layout_toEndOf="@id/cancel" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

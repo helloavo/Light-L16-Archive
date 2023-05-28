@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quality_ftu_preview" android:layout_centerHorizontal="true" />
+    <light.co.lib.widget.TextViewSemiBold android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:layout_below="@id/image" android:layout_centerHorizontal="true" />
+    <light.co.lib.widget.TextViewSemiBold android:textSize="15.0sp" android:textColor="#ffb0b0b0" android:id="@id/subTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/title" android:layout_centerHorizontal="true" />
+    <light.co.lib.widget.TextViewRegular android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/subTitle" android:layout_centerHorizontal="true" android:lineSpacingMultiplier="1.3" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_below="@id/body" android:layout_centerHorizontal="true">
+        <light.co.lib.widget.TextViewSemiBold android:id="@id/button1" android:layout_marginEnd="8.0dip" style="@style/ButtonStyle" />
+        <light.co.lib.widget.TextViewSemiBold android:id="@id/button2" style="@style/ButtonStyle.Positive" />
+    </LinearLayout>
+</RelativeLayout>

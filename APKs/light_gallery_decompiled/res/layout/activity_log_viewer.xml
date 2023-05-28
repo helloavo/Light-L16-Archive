@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/filters" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tag_filter" />
+        <EditText android:textSize="12.0sp" android:id="@id/tag_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/tag_filter_hint" />
+        <android.support.v4.widget.Space android:layout_width="0.0px" android:layout_height="0.0px" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_filter" />
+        <EditText android:textSize="12.0sp" android:id="@id/message_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/message_filter_hint" />
+    </LinearLayout>
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/filters" />
+    <TextView android:textSize="16.0sp" android:textColor="#ffcccccc" android:gravity="center" android:id="@android:id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/no_log_entries" />
+</RelativeLayout>

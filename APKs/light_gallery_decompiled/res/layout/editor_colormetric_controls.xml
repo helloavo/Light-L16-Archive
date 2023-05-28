@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/colormetrics_controls" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <light.co.lib.view.HistogramView android:layout_gravity="center" android:id="@id/histogram" android:background="#88000000" android:layout_width="fill_parent" android:layout_height="@dimen/histogram_height" android:layout_marginTop="@dimen/editor_colormetrics_histogram_margin_top" android:minWidth="@dimen/histogram_icon_width" android:minHeight="@dimen/histogram_icon_height" />
+    <ScrollView android:id="@id/menu_scroller" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip">
+        <light.co.gallery.view.customviews.EditorMenu android:orientation="vertical" android:id="@id/menu_items" android:layout_width="fill_parent" android:layout_height="wrap_content" app:items="@array/colormetrics_menu_items" />
+    </ScrollView>
+</LinearLayout>

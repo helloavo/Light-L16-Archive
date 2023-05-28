@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/toast_text_size" android:textColor="@color/default_text" android:id="@id/toast" android:background="@drawable/toast_bkg" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/max_toast_width"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

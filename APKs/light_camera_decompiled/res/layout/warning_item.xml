@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/setting_view_landscape_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/assist_icon" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/warning_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/warning_icon_padding" android:src="@drawable/tripod_detected" />
+        <TextView android:textSize="@dimen/text_size_medium" android:textColor="@android:color/white" android:id="@id/warning_text" android:background="@drawable/assist_text_background" android:padding="@dimen/warning_icon_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/warning_icon_padding" android:layout_toEndOf="@id/warning_icon" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/warning_ftu" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/assist_icon">
+        <light.co.lib.widget.TextViewSemiBold android:id="@id/warning_ftu_text" android:padding="@dimen/warning_text_horizontal_padding" style="@style/AssistStyle" />
+        <light.co.lib.widget.TextViewSemiBold android:id="@id/warning_ftu_confirm" android:text="@string/ftu_button_confirm" android:layout_centerVertical="true" android:layout_alignEnd="@id/warning_ftu_text" style="@style/FtuConfirmButton" />
+    </RelativeLayout>
+</RelativeLayout>

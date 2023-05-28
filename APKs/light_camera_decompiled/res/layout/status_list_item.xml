@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/status_item" android:layout_width="@dimen/status_icon_width" android:layout_height="@dimen/status_icon_height" android:layout_marginTop="@dimen/status_icon_top_margin" android:layout_marginBottom="@dimen/status_icon_bottom_margin" android:layout_marginStart="@dimen/status_icon_left_margin" />
+</LinearLayout>

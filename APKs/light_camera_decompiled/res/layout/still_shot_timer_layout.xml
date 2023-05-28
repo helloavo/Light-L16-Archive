@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <light.co.camera.view.rotate.RotateLayout android:id="@id/timer_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="85.0sp" android:textColor="@color/primaryMarkColorLight" android:id="@id/timer_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="@color/color_main_background" android:shadowDx="1.5" android:shadowDy="1.5" android:shadowRadius="1.5" />
+    </light.co.camera.view.rotate.RotateLayout>
+</RelativeLayout>

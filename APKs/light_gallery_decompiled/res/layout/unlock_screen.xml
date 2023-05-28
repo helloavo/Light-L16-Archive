@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/unlock_screen" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/clickable_area" android:background="@color/panel_bg" android:layout_width="@dimen/unlock_inner_width" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ImageView android:id="@id/unlock_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lock_40dp" android:layout_above="@id/center" android:layout_centerHorizontal="true" />
+        <View android:id="@id/center" android:layout_width="0.0px" android:layout_height="@dimen/lock_text_margin_top" android:layout_centerInParent="true" />
+        <light.co.lib.widget.TextViewSemiBold android:textSize="@dimen/unlock_text" android:textColor="@color/unlock_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unlock_to_view_gallery" android:layout_below="@id/center" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

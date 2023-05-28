@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<light.co.gallery.overlays.EditorGeometry android:background="@color/edit_image_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/editor_geom_menu_height" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/geom_reset" android:layout_width="@dimen/editor_main_button_width" android:layout_height="@dimen/editor_main_button_height" android:src="@drawable/edit_restore" style="@style/SelectableButton" />
+        <ImageView android:id="@id/geom_flip_x" android:layout_width="@dimen/editor_main_button_width" android:layout_height="@dimen/editor_main_button_height" android:src="@drawable/edit_tool_flip_x" android:layout_marginStart="@dimen/editor_geom_button_margin_start" style="@style/SelectableButton" />
+        <ImageView android:id="@id/geom_flip_y" android:layout_width="@dimen/editor_main_button_width" android:layout_height="@dimen/editor_main_button_height" android:src="@drawable/edit_tool_flip_y" android:layout_marginStart="@dimen/editor_geom_button_margin_start" style="@style/SelectableButton" />
+        <ImageView android:id="@id/geom_rot_90" android:layout_width="@dimen/editor_main_button_width" android:layout_height="@dimen/editor_main_button_height" android:src="@drawable/edit_rotate_icon" android:layout_marginStart="@dimen/editor_geom_button_margin_start" style="@style/SelectableButton" />
+        <ImageView android:id="@id/geom_toggle_aspect_ratio_menu" android:layout_width="@dimen/editor_main_button_width" android:layout_height="@dimen/editor_main_button_height" android:src="@drawable/edit_show_aspect_ratios_icon" android:layout_marginStart="@dimen/editor_geom_button_margin_start" style="@style/SelectableButton" />
+    </LinearLayout>
+</light.co.gallery.overlays.EditorGeometry>
