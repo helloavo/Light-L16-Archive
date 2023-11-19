@@ -5,7 +5,13 @@ This repository is for archiving everything about Light L16 Camera before it is 
   
 Now we have found the final version of LightOS(1.3.5.1), my aim has shifted to reverse engineering the Camera and Gallery apps to try and access individual Sensors, the RAW images contained in the .LRI Files or the Light ASIC (Application-specific integrated circuit).  
 This would allow us to still use the Hardware and break free of LightOS.
-  
+### Other Resources
+
+(Lri-rs) [https://github.com/gennyble/lri-rs] 
+Genny has developed a Rust tool to extract images from .LRI Files (Example) [https://user-images.githubusercontent.com/147816742/283986081-35164a3c-b0e4-4a3d-a0b0-6c0783c99017.png]
+(Discord) [https://discord.gg/YMAfzUt9eV]
+Come chat with other L16 owners : )
+
 ## Website Content
 The Light Website has been totally shut down but can be viewed via the [WayBack Machine](https://web.archive.org/web/20191222062257/https://light.co/camera) (Last Snapshot that had the L16 product page is Dec 22, 2019).  
   
