@@ -8,7 +8,8 @@ This would allow us to still use the Hardware and break free of LightOS.
 ## Other Resources
 [Lri-rs](https://github.com/gennyble/lri-rs)
 Genny has developed a Rust tool to extract images from .LRI Files ([Example](https://user-images.githubusercontent.com/147816742/283986081-35164a3c-b0e4-4a3d-a0b0-6c0783c99017.png))  
-[Discord Server](https://discord.gg/YMAfzUt9eV)
+
+[Discord Server](https://discord.gg/9ZzDYYQPp2)
 Come chat with other L16 owners : )
 
 ## Website Content
